@@ -7,184 +7,204 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0649098A4A6C0573CAA6C13F /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE4F00CA9D88C4120D842 /* CitySearchViewModel.swift */; };
-		066200322062864D8C88BF5D /* CityDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1276B38F1CF7429779BD27EB /* CityDataLoader.swift */; };
-		18103BE7332553720E46044C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45726A4F50073F698C037133 /* City.swift */; };
-		2526EA2B376D5F1723403BDC /* CityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977242873D941267138EC05 /* CityStore.swift */; };
-		68E6A0311F1722F437065E52 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319C7F83ADB2286F7972FE04 /* DatabaseManager.swift */; };
-		78CB48B4E24EC050DD6A269B /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D9AE7317A12BE8D8FC1CD /* SettingsStore.swift */; };
-		795FA07F9C6BC2214EC5AF27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C61789B88593F13511611A /* ContentView.swift */; };
-		7E707C4274311591E693B24A /* ZoneListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5757F7550FC34531359B42E3 /* ZoneListView.swift */; };
-		883ADFF6CC4E0FF1EE33FB1F /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE5465E73580032B20660D /* MenuBarController.swift */; };
-		97C7E78F5E67364208ACB2E9 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BF252A606130E682D1EAC /* MenuBarPopoverView.swift */; };
-		9D8F6AB0E765AA67F9DBC398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAD4D6A8BBA470DEE04FA64 /* AppDelegate.swift */; };
-		A6AB7383E488ABC2163813E6 /* AddCitySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F5706AB8D09FE78D9CD0E /* AddCitySheet.swift */; };
-		BBBE317A67E53CE8ADC6A3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8DB676F9161F90ED4906EE /* Assets.xcassets */; };
-		CE7E399BF6770EE0701BF7AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B2AAD8673828122600A9B /* main.swift */; };
-		E22138EBBD59C01DB1A02D11 /* TimeFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208B5D145390CCBEBC19DC6C /* TimeFormatterService.swift */; };
-		F4DB34864237981D2D13AFB5 /* ZoneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B7ED167F344FE253AE2529 /* ZoneListViewModel.swift */; };
-		F7E375D702FCF091D382EB1A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EAA017C2536D396A224D6 /* AppState.swift */; };
-		FF7825A71149FB4B2FE9A31D /* ZoneRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50778A579F487512D70D03C8 /* ZoneRowView.swift */; };
+		0E03B88BE50BFCA6658049B3 /* TimeFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58E941D4414182636C3021 /* TimeFormatterService.swift */; };
+		0F8E5737CABBF75F5F88388C /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117425221186BA747E0260D6 /* MenuBarPopoverView.swift */; };
+		24B9D7BBA3238AA3C101A736 /* ZoneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E3B939E8C515B5670171D /* ZoneListViewModel.swift */; };
+		305FB1A4EFC6A48C4C841617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B638F7BC3DE8DD1CC0B44F8 /* Assets.xcassets */; };
+		4B1C65C30D458EA7EDC56A85 /* TimezoneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40682A66BC3B65D445AB7B0D /* TimezoneData.swift */; };
+		519BC4789A86F0CD8D304341 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B26B59EE39B727799EAAD4C /* AppState.swift */; };
+		541E49AD44340CAE430161D7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFD1CE3EEA1C3468F7C6D3 /* City.swift */; };
+		5BB55CD43C6C806F9BDAC759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404861EB35D68F43F0A26DB8 /* ContentView.swift */; };
+		6B9B1A0C05D4FEADE95D53CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */; };
+		7403022A06B5E98A24A0B493 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05EC5C860AC7764C933EE8 /* main.swift */; };
+		7F277E719FD652BBAF61474D /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */; };
+		8139E64EC0F390683FEB2196 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */; };
+		8195DC2F0A4ED3F346B9256A /* ZONESApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFC10AEBF9A1BD22F17E22 /* ZONESApp.swift */; };
+		8B80740EDBE78910A54493E9 /* CityDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E475935964A1A4CC07528 /* CityDataLoader.swift */; };
+		A2D53AAABF8E177E04DDC1FA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60F3F9105E384B737A39C1 /* MainWindowController.swift */; };
+		AEBAFAAB1BF884AADDDA591E /* CityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */; };
+		C39850A3F4EDF4E0CB310159 /* AddCitySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270CBC490792D6A136B7A72 /* AddCitySheet.swift */; };
+		C753A91B80C60283A5E0B1BE /* ZoneListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */; };
+		D82EF1A28A2BCC9F3B35BA00 /* ZoneRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */; };
+		FDAC2A012C1709B20700EC43 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = F8E4065F0714259161455563 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BAD4D6A8BBA470DEE04FA64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1276B38F1CF7429779BD27EB /* CityDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataLoader.swift; sourceTree = "<group>"; };
-		1E7EAA017C2536D396A224D6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		208B5D145390CCBEBC19DC6C /* TimeFormatterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatterService.swift; sourceTree = "<group>"; };
-		2E8F5706AB8D09FE78D9CD0E /* AddCitySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCitySheet.swift; sourceTree = "<group>"; };
-		319C7F83ADB2286F7972FE04 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		355D9AE7317A12BE8D8FC1CD /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
-		3E4FE4F00CA9D88C4120D842 /* CitySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
-		45726A4F50073F698C037133 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		50778A579F487512D70D03C8 /* ZoneRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneRowView.swift; sourceTree = "<group>"; };
-		5757F7550FC34531359B42E3 /* ZoneListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListView.swift; sourceTree = "<group>"; };
-		6ED93BA9102690B4D5B9F48F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		72B7ED167F344FE253AE2529 /* ZoneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListViewModel.swift; sourceTree = "<group>"; };
-		990E2FD713660C3B730BF6A0 /* Zones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zones.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A977242873D941267138EC05 /* CityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStore.swift; sourceTree = "<group>"; };
-		AEA8505D05ED4002388FD3EC /* ZONES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZONES.entitlements; sourceTree = "<group>"; };
-		C2C61789B88593F13511611A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DDBE5465E73580032B20660D /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
-		EC9B2AAD8673828122600A9B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F87BF252A606130E682D1EAC /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
-		FF8DB676F9161F90ED4906EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03FFC10AEBF9A1BD22F17E22 /* ZONESApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZONESApp.swift; sourceTree = "<group>"; };
+		0B638F7BC3DE8DD1CC0B44F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		117425221186BA747E0260D6 /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
+		1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListView.swift; sourceTree = "<group>"; };
+		1D190A94D075319AD538B1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
+		2F567BBDA25DA3663E38EAFE /* ZONES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZONES.entitlements; sourceTree = "<group>"; };
+		36FFD1CE3EEA1C3468F7C6D3 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		404861EB35D68F43F0A26DB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		40682A66BC3B65D445AB7B0D /* TimezoneData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneData.swift; sourceTree = "<group>"; };
+		4D05EC5C860AC7764C933EE8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		636E3B939E8C515B5670171D /* ZoneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListViewModel.swift; sourceTree = "<group>"; };
+		6B26B59EE39B727799EAAD4C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStore.swift; sourceTree = "<group>"; };
+		86003D67EF2D55ACBF7FD978 /* ZONES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZONES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B270CBC490792D6A136B7A72 /* AddCitySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCitySheet.swift; sourceTree = "<group>"; };
+		B38E475935964A1A4CC07528 /* CityDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataLoader.swift; sourceTree = "<group>"; };
+		BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneRowView.swift; sourceTree = "<group>"; };
+		ED60F3F9105E384B737A39C1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		FA58E941D4414182636C3021 /* TimeFormatterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		B739C17B20D233A3FC60B805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAC2A012C1709B20700EC43 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		1B61AD995CCE2D97C0F5462F /* Products */ = {
+		17E40728EB3280D66C3F0518 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				990E2FD713660C3B730BF6A0 /* Zones.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2BF9E528539E81DFDED12F38 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				0BAD4D6A8BBA470DEE04FA64 /* AppDelegate.swift */,
-				1E7EAA017C2536D396A224D6 /* AppState.swift */,
-				EC9B2AAD8673828122600A9B /* main.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		4D82676ECA550113EA2BB95B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2E8F5706AB8D09FE78D9CD0E /* AddCitySheet.swift */,
-				C2C61789B88593F13511611A /* ContentView.swift */,
-				5757F7550FC34531359B42E3 /* ZoneListView.swift */,
-				50778A579F487512D70D03C8 /* ZoneRowView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6B2ED8E2882DC11CBE30799F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1276B38F1CF7429779BD27EB /* CityDataLoader.swift */,
-				A977242873D941267138EC05 /* CityStore.swift */,
-				319C7F83ADB2286F7972FE04 /* DatabaseManager.swift */,
-				355D9AE7317A12BE8D8FC1CD /* SettingsStore.swift */,
-				208B5D145390CCBEBC19DC6C /* TimeFormatterService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		7511FCCE03552425866DF8AE = {
-			isa = PBXGroup;
-			children = (
-				7BED1F2AB3397D4A91A9F220 /* ZONES */,
-				1B61AD995CCE2D97C0F5462F /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7BED1F2AB3397D4A91A9F220 /* ZONES */ = {
-			isa = PBXGroup;
-			children = (
-				6ED93BA9102690B4D5B9F48F /* Info.plist */,
-				AEA8505D05ED4002388FD3EC /* ZONES.entitlements */,
-				2BF9E528539E81DFDED12F38 /* App */,
-				C61DB119C05DBC81ED14677F /* MenuBar */,
-				DA55AFD7619FED763EA2BCE4 /* Models */,
-				A14199453789C5466284A738 /* Resources */,
-				6B2ED8E2882DC11CBE30799F /* Services */,
-				D4BFC831B2D40BC52153C53F /* ViewModels */,
-				4D82676ECA550113EA2BB95B /* Views */,
-			);
-			path = ZONES;
-			sourceTree = "<group>";
-		};
-		A14199453789C5466284A738 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FF8DB676F9161F90ED4906EE /* Assets.xcassets */,
+				0B638F7BC3DE8DD1CC0B44F8 /* Assets.xcassets */,
+				1D190A94D075319AD538B1E8 /* Info.plist */,
+				2F567BBDA25DA3663E38EAFE /* ZONES.entitlements */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C61DB119C05DBC81ED14677F /* MenuBar */ = {
+		1849A2CAAF935769A36325ED /* App */ = {
 			isa = PBXGroup;
 			children = (
-				DDBE5465E73580032B20660D /* MenuBarController.swift */,
-				F87BF252A606130E682D1EAC /* MenuBarPopoverView.swift */,
+				CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */,
+				6B26B59EE39B727799EAAD4C /* AppState.swift */,
+				4D05EC5C860AC7764C933EE8 /* main.swift */,
+				ED60F3F9105E384B737A39C1 /* MainWindowController.swift */,
+				03FFC10AEBF9A1BD22F17E22 /* ZONESApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		21394254B1FDBA6FB77248D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B270CBC490792D6A136B7A72 /* AddCitySheet.swift */,
+				404861EB35D68F43F0A26DB8 /* ContentView.swift */,
+				1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */,
+				E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B9E703113A9E18999DF108A /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				117425221186BA747E0260D6 /* MenuBarPopoverView.swift */,
 			);
 			path = MenuBar;
 			sourceTree = "<group>";
 		};
-		D4BFC831B2D40BC52153C53F /* ViewModels */ = {
+		899AD67F03E4E592499F5336 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				3E4FE4F00CA9D88C4120D842 /* CitySearchViewModel.swift */,
-				72B7ED167F344FE253AE2529 /* ZoneListViewModel.swift */,
+				224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */,
+				636E3B939E8C515B5670171D /* ZoneListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		DA55AFD7619FED763EA2BCE4 /* Models */ = {
+		917A84B6CF64D538A241A49E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				45726A4F50073F698C037133 /* City.swift */,
+				B38E475935964A1A4CC07528 /* CityDataLoader.swift */,
+				6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */,
+				BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */,
+				FA58E941D4414182636C3021 /* TimeFormatterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4CE4AF60C7FAE999076828F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86003D67EF2D55ACBF7FD978 /* ZONES.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3B3AB5F41F91AFBF022F9EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36FFD1CE3EEA1C3468F7C6D3 /* City.swift */,
+				40682A66BC3B65D445AB7B0D /* TimezoneData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E42ACCCBE188C1E53EDFD8D4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1849A2CAAF935769A36325ED /* App */,
+				3B9E703113A9E18999DF108A /* MenuBar */,
+				E3B3AB5F41F91AFBF022F9EA /* Models */,
+				17E40728EB3280D66C3F0518 /* Resources */,
+				917A84B6CF64D538A241A49E /* Services */,
+				899AD67F03E4E592499F5336 /* ViewModels */,
+				21394254B1FDBA6FB77248D4 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E9DBBE19B1746C8BC5A4A265 = {
+			isa = PBXGroup;
+			children = (
+				E42ACCCBE188C1E53EDFD8D4 /* Sources */,
+				C4CE4AF60C7FAE999076828F /* Products */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB097F3FD8FD34EFB2BEDC57 /* Zones */ = {
+		3102BF9D5607D6D2EECBC2B2 /* ZONES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0CBFC5E12AB16C153E62D38 /* Build configuration list for PBXNativeTarget "Zones" */;
+			buildConfigurationList = D85260AE579C4FB8EE823AC8 /* Build configuration list for PBXNativeTarget "ZONES" */;
 			buildPhases = (
-				557682636108D7211E40BD83 /* Sources */,
-				EFE9159DF5246ED873798119 /* Resources */,
+				B3DC99C643F2819FDE81430A /* Sources */,
+				C370F67BD3BC35FEF4E107CE /* Resources */,
+				B739C17B20D233A3FC60B805 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Zones;
-			productName = Zones;
-			productReference = 990E2FD713660C3B730BF6A0 /* Zones.app */;
+			name = ZONES;
+			packageProductDependencies = (
+				F8E4065F0714259161455563 /* SQLite */,
+			);
+			productName = ZONES;
+			productReference = 86003D67EF2D55ACBF7FD978 /* ZONES.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D34BEBEEFC80952C4A376A2 /* Project object */ = {
+		E4EDCB3037E171B218826F9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					FB097F3FD8FD34EFB2BEDC57 = {
-						ProvisioningStyle = Automatic;
+					3102BF9D5607D6D2EECBC2B2 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = 979AF59774F82147CF083D70 /* Build configuration list for PBXProject "Zones" */;
+			buildConfigurationList = C7CB38BEC56505C26FA319A4 /* Build configuration list for PBXProject "ZONES" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -192,55 +212,81 @@
 				Base,
 				en,
 			);
-			mainGroup = 7511FCCE03552425866DF8AE;
+			mainGroup = E9DBBE19B1746C8BC5A4A265;
+			packageReferences = (
+				4A4C9349B492AB982BB29AE5 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB097F3FD8FD34EFB2BEDC57 /* Zones */,
+				3102BF9D5607D6D2EECBC2B2 /* ZONES */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EFE9159DF5246ED873798119 /* Resources */ = {
+		C370F67BD3BC35FEF4E107CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBE317A67E53CE8ADC6A3C8 /* Assets.xcassets in Resources */,
+				305FB1A4EFC6A48C4C841617 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		557682636108D7211E40BD83 /* Sources */ = {
+		B3DC99C643F2819FDE81430A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6AB7383E488ABC2163813E6 /* AddCitySheet.swift in Sources */,
-				9D8F6AB0E765AA67F9DBC398 /* AppDelegate.swift in Sources */,
-				F7E375D702FCF091D382EB1A /* AppState.swift in Sources */,
-				18103BE7332553720E46044C /* City.swift in Sources */,
-				066200322062864D8C88BF5D /* CityDataLoader.swift in Sources */,
-				0649098A4A6C0573CAA6C13F /* CitySearchViewModel.swift in Sources */,
-				2526EA2B376D5F1723403BDC /* CityStore.swift in Sources */,
-				795FA07F9C6BC2214EC5AF27 /* ContentView.swift in Sources */,
-				68E6A0311F1722F437065E52 /* DatabaseManager.swift in Sources */,
-				883ADFF6CC4E0FF1EE33FB1F /* MenuBarController.swift in Sources */,
-				97C7E78F5E67364208ACB2E9 /* MenuBarPopoverView.swift in Sources */,
-				78CB48B4E24EC050DD6A269B /* SettingsStore.swift in Sources */,
-				E22138EBBD59C01DB1A02D11 /* TimeFormatterService.swift in Sources */,
-				7E707C4274311591E693B24A /* ZoneListView.swift in Sources */,
-				F4DB34864237981D2D13AFB5 /* ZoneListViewModel.swift in Sources */,
-				FF7825A71149FB4B2FE9A31D /* ZoneRowView.swift in Sources */,
-				CE7E399BF6770EE0701BF7AC /* main.swift in Sources */,
+				C39850A3F4EDF4E0CB310159 /* AddCitySheet.swift in Sources */,
+				6B9B1A0C05D4FEADE95D53CD /* AppDelegate.swift in Sources */,
+				519BC4789A86F0CD8D304341 /* AppState.swift in Sources */,
+				541E49AD44340CAE430161D7 /* City.swift in Sources */,
+				8B80740EDBE78910A54493E9 /* CityDataLoader.swift in Sources */,
+				7F277E719FD652BBAF61474D /* CitySearchViewModel.swift in Sources */,
+				AEBAFAAB1BF884AADDDA591E /* CityStore.swift in Sources */,
+				5BB55CD43C6C806F9BDAC759 /* ContentView.swift in Sources */,
+				8139E64EC0F390683FEB2196 /* DatabaseManager.swift in Sources */,
+				A2D53AAABF8E177E04DDC1FA /* MainWindowController.swift in Sources */,
+				0F8E5737CABBF75F5F88388C /* MenuBarPopoverView.swift in Sources */,
+				0E03B88BE50BFCA6658049B3 /* TimeFormatterService.swift in Sources */,
+				4B1C65C30D458EA7EDC56A85 /* TimezoneData.swift in Sources */,
+				8195DC2F0A4ED3F346B9256A /* ZONESApp.swift in Sources */,
+				C753A91B80C60283A5E0B1BE /* ZoneListView.swift in Sources */,
+				24B9D7BBA3238AA3C101A736 /* ZoneListViewModel.swift in Sources */,
+				D82EF1A28A2BCC9F3B35BA00 /* ZoneRowView.swift in Sources */,
+				7403022A06B5E98A24A0B493 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		57E0961E3CCE4FFDB4568487 /* Release */ = {
+		6B75441983450F5573264E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/Resources/ZONES.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zones.app;
+				PRODUCT_NAME = ZONES;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		773E40ACE0DD7D6DBB91C53D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -273,12 +319,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -289,45 +331,40 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = ZONES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.9;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		67459B5044BA719A8B1B664C /* Debug */ = {
+		83D208DE74FDF4F57C578515 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ZONES/ZONES.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Sources/Resources/ZONES.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ZONES/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.timtamtom.zones;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zones.app;
+				PRODUCT_NAME = ZONES;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
 			};
 			name = Debug;
 		};
-		D0B8C389CD0CF43F972EC63F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ZONES/ZONES.entitlements;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ZONES/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.timtamtom.zones;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		D39D6FAC1809576529856986 /* Debug */ = {
+		8AE13079660226B42E4C4545 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -360,12 +397,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -382,41 +415,59 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = ZONES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.9;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		979AF59774F82147CF083D70 /* Build configuration list for PBXProject "Zones" */ = {
+		C7CB38BEC56505C26FA319A4 /* Build configuration list for PBXProject "ZONES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D39D6FAC1809576529856986 /* Debug */,
-				57E0961E3CCE4FFDB4568487 /* Release */,
+				8AE13079660226B42E4C4545 /* Debug */,
+				773E40ACE0DD7D6DBB91C53D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A0CBFC5E12AB16C153E62D38 /* Build configuration list for PBXNativeTarget "Zones" */ = {
+		D85260AE579C4FB8EE823AC8 /* Build configuration list for PBXNativeTarget "ZONES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67459B5044BA719A8B1B664C /* Debug */,
-				D0B8C389CD0CF43F972EC63F /* Release */,
+				83D208DE74FDF4F57C578515 /* Debug */,
+				6B75441983450F5573264E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A4C9349B492AB982BB29AE5 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8E4065F0714259161455563 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4C9349B492AB982BB29AE5 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 5D34BEBEEFC80952C4A376A2 /* Project object */;
+	rootObject = E4EDCB3037E171B218826F9A /* Project object */;
 }

@@ -1,36 +1,41 @@
-name: Zones
+name: ZONES
 options:
-  bundleIdPrefix: com.timtamtom
+  bundleIdPrefix: com.zones
   deploymentTarget:
-    macOS: "14.0"
+    macOS: "13.0"
   xcodeVersion: "15.0"
   generateEmptyDirectories: true
 
-settings:
-  base:
-    PRODUCT_NAME: ZONES
-    MARKETING_VERSION: 1.0.0
-    CURRENT_PROJECT_VERSION: 1
-    SWIFT_VERSION: "5.9"
-    MACOSX_DEPLOYMENT_TARGET: "14.0"
-    CODE_SIGN_STYLE: Automatic
-    ENABLE_HARDENED_RUNTIME: YES
-    COMBINE_HIDPI_IMAGES: YES
+packages:
+  SQLite:
+    url: https://github.com/stephencelis/SQLite.swift
+    from: "0.14.0"
 
 targets:
-  Zones:
+  ZONES:
     type: application
     platform: macOS
     sources:
-      - path: ZONES
-        excludes:
-          - "**/.DS_Store"
+      - Sources
     settings:
       base:
-        INFOPLIST_FILE: ZONES/Info.plist
-        CODE_SIGN_ENTITLEMENTS: ZONES/ZONES.entitlements
-        PRODUCT_BUNDLE_IDENTIFIER: com.timtamtom.zones
-        LD_RUNPATH_SEARCH_PATHS: "@executable_path/../Frameworks"
+        PRODUCT_BUNDLE_IDENTIFIER: com.zones.app
+        PRODUCT_NAME: ZONES
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        INFOPLIST_FILE: Sources/Resources/Info.plist
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        DEVELOPMENT_TEAM: ""
+        ENABLE_HARDENED_RUNTIME: YES
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        LD_RUNPATH_SEARCH_PATHS: "@executable_path/../Frameworks"
+        COMBINE_HIDPI_IMAGES: YES
+    dependencies:
+      - package: SQLite
     entitlements:
-      path: ZONES/ZONES.entitlements
+      path: Sources/Resources/ZONES.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
