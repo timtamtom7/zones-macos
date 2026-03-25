@@ -1,7 +1,8 @@
 import Foundation
 
-final class TimeConverterService {
-    struct ConversionResult {
+final class TimeConverterService: ObservableObject {
+    struct ConversionResult: Identifiable {
+        let id = UUID()
         let city: City
         let localTime: Date
         let formattedTime: String

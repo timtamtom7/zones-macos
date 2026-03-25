@@ -7,40 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02657215D9F7B150D1E17355 /* ZoneSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3F42CD0DB55AC87E203FE /* ZoneSyncService.swift */; };
+		02DF1906E83E772171BC8E6D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACE8E72BC90A62DA155DD4 /* WeatherService.swift */; };
 		0E03B88BE50BFCA6658049B3 /* TimeFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58E941D4414182636C3021 /* TimeFormatterService.swift */; };
 		0F8E5737CABBF75F5F88388C /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117425221186BA747E0260D6 /* MenuBarPopoverView.swift */; };
+		16159CFAA87DE61427E2439E /* ZoneIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9765FE267A9C8110B51B6 /* ZoneIntents.swift */; };
+		1917342CFC87158A0668F07F /* WorkingHoursService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612B66B3157455C9E1E7728 /* WorkingHoursService.swift */; };
+		226B59D5188801EB3FCE0573 /* iCloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036BE03A3E52EBEE3856456 /* iCloudSyncService.swift */; };
 		24B9D7BBA3238AA3C101A736 /* ZoneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E3B939E8C515B5670171D /* ZoneListViewModel.swift */; };
 		2AE9D3CA41E6B88A3523058F /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABD469C480680EEE704CE9 /* AnalogClockView.swift */; };
+		2B8DF0D81E07CAC6E71F947F /* DSTCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D5216DA61DAF64EEEE193 /* DSTCalendarService.swift */; };
+		2C1579F1F475864EE0BB8E81 /* CompareZonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E1D7C76AEE837EA65A5B3 /* CompareZonesView.swift */; };
 		305FB1A4EFC6A48C4C841617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B638F7BC3DE8DD1CC0B44F8 /* Assets.xcassets */; };
 		4B1C65C30D458EA7EDC56A85 /* TimezoneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40682A66BC3B65D445AB7B0D /* TimezoneData.swift */; };
 		519BC4789A86F0CD8D304341 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B26B59EE39B727799EAAD4C /* AppState.swift */; };
 		541E49AD44340CAE430161D7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFD1CE3EEA1C3468F7C6D3 /* City.swift */; };
+		589BBD10A710A95C03543D8D /* AdvancedZoneServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8712338A4D3CB60ED0D3135 /* AdvancedZoneServices.swift */; };
 		5BB55CD43C6C806F9BDAC759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404861EB35D68F43F0A26DB8 /* ContentView.swift */; };
+		5BD3F6B2FE6BBF01D34AB155 /* MeetingSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7449CB84B12ABBE266B1A4 /* MeetingSlot.swift */; };
+		60E276644C27893D2DC044B9 /* SunPositionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B36C86A5D7263894092CFB /* SunPositionService.swift */; };
 		64FEC547F6FB2626D9F85C53 /* ClockFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCA2BCD98E82B04AA8FE7D3 /* ClockFormatService.swift */; };
 		6B9B1A0C05D4FEADE95D53CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */; };
 		7403022A06B5E98A24A0B493 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05EC5C860AC7764C933EE8 /* main.swift */; };
 		7F277E719FD652BBAF61474D /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */; };
+		800F8CF057E47B31834559DD /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8045ED973BBF1F7C4FD2C7D /* MenuBarController.swift */; };
 		80FEBC16F3E05F108739FD00 /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13D632B2530F3E374DA283 /* DigitalClockView.swift */; };
 		8139E64EC0F390683FEB2196 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */; };
 		8195DC2F0A4ED3F346B9256A /* ZONESApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFC10AEBF9A1BD22F17E22 /* ZONESApp.swift */; };
 		8B80740EDBE78910A54493E9 /* CityDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E475935964A1A4CC07528 /* CityDataLoader.swift */; };
+		8B92257DB2DEE6FE67CC69F8 /* TimeConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F985807F937C63C7851C41F /* TimeConverterView.swift */; };
 		8FEF2810D6DDAC1969702FD0 /* WorldMapMiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BBAC76DE8339B30F78494 /* WorldMapMiniView.swift */; };
 		96F614020A341939E01D943E /* DSTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6431316B2546E467152BE8DF /* DSTService.swift */; };
+		9F924488CECCEF95D6E9EF2B /* WorldMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7128632E07C94E82B9F611 /* WorldMapView.swift */; };
 		A2D53AAABF8E177E04DDC1FA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60F3F9105E384B737A39C1 /* MainWindowController.swift */; };
 		AEBAFAAB1BF884AADDDA591E /* CityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */; };
+		B4FCEFD77DFBDD86D5A41C98 /* MeetingPlannerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CE14E75B774CF5965A845 /* MeetingPlannerSheet.swift */; };
+		BF8A1474C9E68DDF27ED8821 /* WidgetConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC8497C3F5B91103FF50FB /* WidgetConfigView.swift */; };
 		C39850A3F4EDF4E0CB310159 /* AddCitySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270CBC490792D6A136B7A72 /* AddCitySheet.swift */; };
 		C753A91B80C60283A5E0B1BE /* ZoneListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */; };
+		CE95785639B5385CE53C4AB9 /* MeetingPlannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */; };
 		D6C764A550111E3BFF4357B9 /* CityDetailPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755CDFEA76712AB22FCF8E3 /* CityDetailPopover.swift */; };
 		D82EF1A28A2BCC9F3B35BA00 /* ZoneRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */; };
+		E3ED04887C151614AB4C9B05 /* WidgetRefreshService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEEFE71C84A1F5A077CE9 /* WidgetRefreshService.swift */; };
+		F51C2C813DF0A62A8089365D /* EventNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11B70A5E716D07E9AA220E /* EventNotificationService.swift */; };
 		F9286DDC3C71A2924B7E7B36 /* ClockFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EFD8386066BD60F3F3D797 /* ClockFormat.swift */; };
+		FB520AB8501AAFDFE962A8DC /* TimeConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F81780A1180E7561899AB /* TimeConverterService.swift */; };
 		FDAC2A012C1709B20700EC43 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = F8E4065F0714259161455563 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001F81780A1180E7561899AB /* TimeConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterService.swift; sourceTree = "<group>"; };
 		03FFC10AEBF9A1BD22F17E22 /* ZONESApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZONESApp.swift; sourceTree = "<group>"; };
 		0A13D632B2530F3E374DA283 /* DigitalClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClockView.swift; sourceTree = "<group>"; };
 		0B638F7BC3DE8DD1CC0B44F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117425221186BA747E0260D6 /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
+		157E1D7C76AEE837EA65A5B3 /* CompareZonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareZonesView.swift; sourceTree = "<group>"; };
+		1612B66B3157455C9E1E7728 /* WorkingHoursService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingHoursService.swift; sourceTree = "<group>"; };
 		1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListView.swift; sourceTree = "<group>"; };
 		1D190A94D075319AD538B1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
@@ -50,21 +72,37 @@
 		404861EB35D68F43F0A26DB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40682A66BC3B65D445AB7B0D /* TimezoneData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneData.swift; sourceTree = "<group>"; };
 		4D05EC5C860AC7764C933EE8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		56A3F42CD0DB55AC87E203FE /* ZoneSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneSyncService.swift; sourceTree = "<group>"; };
+		5F985807F937C63C7851C41F /* TimeConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterView.swift; sourceTree = "<group>"; };
 		636E3B939E8C515B5670171D /* ZoneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListViewModel.swift; sourceTree = "<group>"; };
 		6431316B2546E467152BE8DF /* DSTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTService.swift; sourceTree = "<group>"; };
 		6B26B59EE39B727799EAAD4C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStore.swift; sourceTree = "<group>"; };
 		7BABD469C480680EEE704CE9 /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
+		80A9765FE267A9C8110B51B6 /* ZoneIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneIntents.swift; sourceTree = "<group>"; };
+		80ACE8E72BC90A62DA155DD4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		84FAEEFE71C84A1F5A077CE9 /* WidgetRefreshService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRefreshService.swift; sourceTree = "<group>"; };
 		86003D67EF2D55ACBF7FD978 /* ZONES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZONES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerService.swift; sourceTree = "<group>"; };
+		90B36C86A5D7263894092CFB /* SunPositionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunPositionService.swift; sourceTree = "<group>"; };
+		A036BE03A3E52EBEE3856456 /* iCloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSyncService.swift; sourceTree = "<group>"; };
+		A8045ED973BBF1F7C4FD2C7D /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		AA6CE14E75B774CF5965A845 /* MeetingPlannerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerSheet.swift; sourceTree = "<group>"; };
 		B270CBC490792D6A136B7A72 /* AddCitySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCitySheet.swift; sourceTree = "<group>"; };
 		B38E475935964A1A4CC07528 /* CityDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataLoader.swift; sourceTree = "<group>"; };
 		BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		C5EFD8386066BD60F3F3D797 /* ClockFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFormat.swift; sourceTree = "<group>"; };
 		CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE3D5216DA61DAF64EEEE193 /* DSTCalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTCalendarService.swift; sourceTree = "<group>"; };
+		D8712338A4D3CB60ED0D3135 /* AdvancedZoneServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedZoneServices.swift; sourceTree = "<group>"; };
+		DF11B70A5E716D07E9AA220E /* EventNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNotificationService.swift; sourceTree = "<group>"; };
+		E4AC8497C3F5B91103FF50FB /* WidgetConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetConfigView.swift; sourceTree = "<group>"; };
 		E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneRowView.swift; sourceTree = "<group>"; };
 		E755CDFEA76712AB22FCF8E3 /* CityDetailPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailPopover.swift; sourceTree = "<group>"; };
 		ED60F3F9105E384B737A39C1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		FA58E941D4414182636C3021 /* TimeFormatterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatterService.swift; sourceTree = "<group>"; };
+		FA7449CB84B12ABBE266B1A4 /* MeetingSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingSlot.swift; sourceTree = "<group>"; };
+		FB7128632E07C94E82B9F611 /* WorldMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldMapView.swift; sourceTree = "<group>"; };
 		FCCA2BCD98E82B04AA8FE7D3 /* ClockFormatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFormatService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,9 +146,14 @@
 				B270CBC490792D6A136B7A72 /* AddCitySheet.swift */,
 				7BABD469C480680EEE704CE9 /* AnalogClockView.swift */,
 				E755CDFEA76712AB22FCF8E3 /* CityDetailPopover.swift */,
+				157E1D7C76AEE837EA65A5B3 /* CompareZonesView.swift */,
 				404861EB35D68F43F0A26DB8 /* ContentView.swift */,
 				0A13D632B2530F3E374DA283 /* DigitalClockView.swift */,
+				AA6CE14E75B774CF5965A845 /* MeetingPlannerSheet.swift */,
+				5F985807F937C63C7851C41F /* TimeConverterView.swift */,
+				E4AC8497C3F5B91103FF50FB /* WidgetConfigView.swift */,
 				236BBAC76DE8339B30F78494 /* WorldMapMiniView.swift */,
+				FB7128632E07C94E82B9F611 /* WorldMapView.swift */,
 				1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */,
 				E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */,
 			);
@@ -120,9 +163,18 @@
 		3B9E703113A9E18999DF108A /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
+				A8045ED973BBF1F7C4FD2C7D /* MenuBarController.swift */,
 				117425221186BA747E0260D6 /* MenuBarPopoverView.swift */,
 			);
 			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		57FCF413204F1016293B4917 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				80A9765FE267A9C8110B51B6 /* ZoneIntents.swift */,
+			);
+			path = Intents;
 			sourceTree = "<group>";
 		};
 		899AD67F03E4E592499F5336 /* ViewModels */ = {
@@ -137,12 +189,23 @@
 		917A84B6CF64D538A241A49E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D8712338A4D3CB60ED0D3135 /* AdvancedZoneServices.swift */,
 				B38E475935964A1A4CC07528 /* CityDataLoader.swift */,
 				6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */,
 				FCCA2BCD98E82B04AA8FE7D3 /* ClockFormatService.swift */,
 				BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */,
+				CE3D5216DA61DAF64EEEE193 /* DSTCalendarService.swift */,
 				6431316B2546E467152BE8DF /* DSTService.swift */,
+				DF11B70A5E716D07E9AA220E /* EventNotificationService.swift */,
+				A036BE03A3E52EBEE3856456 /* iCloudSyncService.swift */,
+				8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */,
+				90B36C86A5D7263894092CFB /* SunPositionService.swift */,
+				001F81780A1180E7561899AB /* TimeConverterService.swift */,
 				FA58E941D4414182636C3021 /* TimeFormatterService.swift */,
+				80ACE8E72BC90A62DA155DD4 /* WeatherService.swift */,
+				84FAEEFE71C84A1F5A077CE9 /* WidgetRefreshService.swift */,
+				1612B66B3157455C9E1E7728 /* WorkingHoursService.swift */,
+				56A3F42CD0DB55AC87E203FE /* ZoneSyncService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -160,6 +223,7 @@
 			children = (
 				36FFD1CE3EEA1C3468F7C6D3 /* City.swift */,
 				C5EFD8386066BD60F3F3D797 /* ClockFormat.swift */,
+				FA7449CB84B12ABBE266B1A4 /* MeetingSlot.swift */,
 				40682A66BC3B65D445AB7B0D /* TimezoneData.swift */,
 			);
 			path = Models;
@@ -169,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				1849A2CAAF935769A36325ED /* App */,
+				57FCF413204F1016293B4917 /* Intents */,
 				3B9E703113A9E18999DF108A /* MenuBar */,
 				E3B3AB5F41F91AFBF022F9EA /* Models */,
 				17E40728EB3280D66C3F0518 /* Resources */,
@@ -262,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39850A3F4EDF4E0CB310159 /* AddCitySheet.swift in Sources */,
+				589BBD10A710A95C03543D8D /* AdvancedZoneServices.swift in Sources */,
 				2AE9D3CA41E6B88A3523058F /* AnalogClockView.swift in Sources */,
 				6B9B1A0C05D4FEADE95D53CD /* AppDelegate.swift in Sources */,
 				519BC4789A86F0CD8D304341 /* AppState.swift in Sources */,
@@ -272,19 +338,37 @@
 				AEBAFAAB1BF884AADDDA591E /* CityStore.swift in Sources */,
 				F9286DDC3C71A2924B7E7B36 /* ClockFormat.swift in Sources */,
 				64FEC547F6FB2626D9F85C53 /* ClockFormatService.swift in Sources */,
+				2C1579F1F475864EE0BB8E81 /* CompareZonesView.swift in Sources */,
 				5BB55CD43C6C806F9BDAC759 /* ContentView.swift in Sources */,
+				2B8DF0D81E07CAC6E71F947F /* DSTCalendarService.swift in Sources */,
 				96F614020A341939E01D943E /* DSTService.swift in Sources */,
 				8139E64EC0F390683FEB2196 /* DatabaseManager.swift in Sources */,
 				80FEBC16F3E05F108739FD00 /* DigitalClockView.swift in Sources */,
+				F51C2C813DF0A62A8089365D /* EventNotificationService.swift in Sources */,
 				A2D53AAABF8E177E04DDC1FA /* MainWindowController.swift in Sources */,
+				CE95785639B5385CE53C4AB9 /* MeetingPlannerService.swift in Sources */,
+				B4FCEFD77DFBDD86D5A41C98 /* MeetingPlannerSheet.swift in Sources */,
+				5BD3F6B2FE6BBF01D34AB155 /* MeetingSlot.swift in Sources */,
+				800F8CF057E47B31834559DD /* MenuBarController.swift in Sources */,
 				0F8E5737CABBF75F5F88388C /* MenuBarPopoverView.swift in Sources */,
+				60E276644C27893D2DC044B9 /* SunPositionService.swift in Sources */,
+				FB520AB8501AAFDFE962A8DC /* TimeConverterService.swift in Sources */,
+				8B92257DB2DEE6FE67CC69F8 /* TimeConverterView.swift in Sources */,
 				0E03B88BE50BFCA6658049B3 /* TimeFormatterService.swift in Sources */,
 				4B1C65C30D458EA7EDC56A85 /* TimezoneData.swift in Sources */,
+				02DF1906E83E772171BC8E6D /* WeatherService.swift in Sources */,
+				BF8A1474C9E68DDF27ED8821 /* WidgetConfigView.swift in Sources */,
+				E3ED04887C151614AB4C9B05 /* WidgetRefreshService.swift in Sources */,
+				1917342CFC87158A0668F07F /* WorkingHoursService.swift in Sources */,
 				8FEF2810D6DDAC1969702FD0 /* WorldMapMiniView.swift in Sources */,
+				9F924488CECCEF95D6E9EF2B /* WorldMapView.swift in Sources */,
 				8195DC2F0A4ED3F346B9256A /* ZONESApp.swift in Sources */,
+				16159CFAA87DE61427E2439E /* ZoneIntents.swift in Sources */,
 				C753A91B80C60283A5E0B1BE /* ZoneListView.swift in Sources */,
 				24B9D7BBA3238AA3C101A736 /* ZoneListViewModel.swift in Sources */,
 				D82EF1A28A2BCC9F3B35BA00 /* ZoneRowView.swift in Sources */,
+				02657215D9F7B150D1E17355 /* ZoneSyncService.swift in Sources */,
+				226B59D5188801EB3FCE0573 /* iCloudSyncService.swift in Sources */,
 				7403022A06B5E98A24A0B493 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,20 +381,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Sources/Resources/ZONES.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zones.app;
 				PRODUCT_NAME = ZONES;
 				SDKROOT = macosx;
-				SWIFT_VERSION = 5.9;
 			};
 			name = Release;
 		};
@@ -347,8 +425,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -366,7 +448,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.9;
 			};
 			name = Release;
 		};
@@ -375,20 +457,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Sources/Resources/ZONES.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zones.app;
 				PRODUCT_NAME = ZONES;
 				SDKROOT = macosx;
-				SWIFT_VERSION = 5.9;
 			};
 			name = Debug;
 		};
@@ -425,8 +501,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -451,7 +531,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.9;
 			};
 			name = Debug;
 		};

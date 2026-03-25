@@ -198,15 +198,3 @@ struct CityPickerSheet: View {
         .frame(width: 300, height: 400)
     }
 }
-
-extension City {
-    init(id: UUID, name: String, country: String, timezoneIdentifier: String, sortOrder: Int, isLocal: Bool, isFavorite: Bool) {
-        self.id = id
-        self.name = name
-        self.country = country
-        self.timezoneIdentifier = timezoneIdentifier
-        self.sortOrder = sortOrder
-        self.isLocal = isLocal
-        self.isFavorite = isFavorite
-    }
-}

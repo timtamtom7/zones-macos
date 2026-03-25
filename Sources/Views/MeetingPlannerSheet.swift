@@ -2,8 +2,8 @@ import SwiftUI
 
 struct MeetingPlannerSheet: View {
     @Binding var isPresented: Bool
-    @StateObject private var plannerService = MeetingPlannerService()
     @StateObject private var cityStore = CityStore.shared
+    private let plannerService = MeetingPlannerService()
 
     @State private var selectedCities: Set<String> = []
     @State private var duration: TimeInterval = 3600

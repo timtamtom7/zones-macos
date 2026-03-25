@@ -1,6 +1,6 @@
 import Foundation
 
-final class MeetingPlannerService {
+final class MeetingPlannerService: ObservableObject {
     func calculateSlots(
         duration: TimeInterval,
         participants: [City],

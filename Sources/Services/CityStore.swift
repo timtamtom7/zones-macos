@@ -1,15 +1,19 @@
 import Foundation
 import SQLite
 
-class CityStore {
+class CityStore: ObservableObject {
     static let shared = CityStore()
 
     private var db: Connection? { DatabaseManager.shared.getConnection() }
+    
+    @Published var cities: [City] = []
 
-    private init() {}
+    private init() {
+        loadCities()
+    }
 
     func loadCities() {
-        // Cities are loaded via getAllCities
+        cities = getAllCities()
     }
 
     func getAllCities() -> [City] {

@@ -16,7 +16,7 @@ final class SunPositionService {
         let declination = 23.45 * sin(Double(360 * (284 + dayOfYear) / 365) * .pi / 180)
 
         // Hour angle
-        let hour = calendar.component(.hour, from: date) + calendar.component(.minute, from: date) / 60.0
+        let hour = Double(calendar.component(.hour, from: date)) + Double(calendar.component(.minute, from: date)) / 60.0
         let hourAngle = 15 * (hour - 12)
 
         // Solar elevation

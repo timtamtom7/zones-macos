@@ -145,23 +145,21 @@ struct WorldMapView: View {
     private func cityDetailBar(_ city: City) -> some View {
         HStack {
             if let tz = city.timezone {
-                let formatter = DateFormatter()
-                formatter.timeZone = tz
-                formatter.dateFormat = "h:mm a"
-                Text(formatter.string(from: Date()))
-                    .font(.system(size: 24, weight: .medium, design: .monospaced))
+                Text(Self.formattedTime(for: tz)).font(.system(size: 24, weight: .medium, design: .monospaced))
             }
             Spacer()
-            Text(city.name)
-                .font(.headline)
+            Text(city.name).font(.headline)
             if let abbrev = city.timezone?.abbreviation() {
-                Text(abbrev)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                Text(abbrev).font(.caption).foregroundColor(.secondary)
             }
-        }
-        .padding()
-        .background(Color(NSColor.controlBackgroundColor))
+        }.padding().background(Color(NSColor.controlBackgroundColor))
+    }
+    
+    private static func formattedTime(for tz: TimeZone) -> String {
+        let formatter = DateFormatter()
+        formatter.timeZone = tz
+        formatter.dateFormat = "h:mm a"
+        return formatter.string(from: Date())
     }
 
     private func fitAllCities() {
