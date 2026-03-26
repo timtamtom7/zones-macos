@@ -25,6 +25,7 @@
 		589BBD10A710A95C03543D8D /* AdvancedZoneServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8712338A4D3CB60ED0D3135 /* AdvancedZoneServices.swift */; };
 		5BB55CD43C6C806F9BDAC759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404861EB35D68F43F0A26DB8 /* ContentView.swift */; };
 		5BD3F6B2FE6BBF01D34AB155 /* MeetingSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7449CB84B12ABBE266B1A4 /* MeetingSlot.swift */; };
+		6085060B8F189688BEB2B77D /* ZonesR12R15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234A968310ABDB696F4CC4F /* ZonesR12R15.swift */; };
 		60E276644C27893D2DC044B9 /* SunPositionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B36C86A5D7263894092CFB /* SunPositionService.swift */; };
 		64FEC547F6FB2626D9F85C53 /* ClockFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCA2BCD98E82B04AA8FE7D3 /* ClockFormatService.swift */; };
 		6B9B1A0C05D4FEADE95D53CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */; };
@@ -81,6 +82,7 @@
 		7BABD469C480680EEE704CE9 /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
 		80A9765FE267A9C8110B51B6 /* ZoneIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneIntents.swift; sourceTree = "<group>"; };
 		80ACE8E72BC90A62DA155DD4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		8234A968310ABDB696F4CC4F /* ZonesR12R15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonesR12R15.swift; sourceTree = "<group>"; };
 		84FAEEFE71C84A1F5A077CE9 /* WidgetRefreshService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRefreshService.swift; sourceTree = "<group>"; };
 		86003D67EF2D55ACBF7FD978 /* ZONES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZONES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerService.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				C5EFD8386066BD60F3F3D797 /* ClockFormat.swift */,
 				FA7449CB84B12ABBE266B1A4 /* MeetingSlot.swift */,
 				40682A66BC3B65D445AB7B0D /* TimezoneData.swift */,
+				8234A968310ABDB696F4CC4F /* ZonesR12R15.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				24B9D7BBA3238AA3C101A736 /* ZoneListViewModel.swift in Sources */,
 				D82EF1A28A2BCC9F3B35BA00 /* ZoneRowView.swift in Sources */,
 				02657215D9F7B150D1E17355 /* ZoneSyncService.swift in Sources */,
+				6085060B8F189688BEB2B77D /* ZonesR12R15.swift in Sources */,
 				226B59D5188801EB3FCE0573 /* iCloudSyncService.swift in Sources */,
 				7403022A06B5E98A24A0B493 /* main.swift in Sources */,
 			);
