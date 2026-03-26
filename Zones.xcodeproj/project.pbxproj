@@ -30,6 +30,7 @@
 		64FEC547F6FB2626D9F85C53 /* ClockFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCA2BCD98E82B04AA8FE7D3 /* ClockFormatService.swift */; };
 		6B9B1A0C05D4FEADE95D53CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */; };
 		7403022A06B5E98A24A0B493 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05EC5C860AC7764C933EE8 /* main.swift */; };
+		7C3A86B057A6CC92BD3BC20B /* PrivacyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9555B1074787826BCF0CDF6 /* PrivacyService.swift */; };
 		7F277E719FD652BBAF61474D /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */; };
 		800F8CF057E47B31834559DD /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8045ED973BBF1F7C4FD2C7D /* MenuBarController.swift */; };
 		80FEBC16F3E05F108739FD00 /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13D632B2530F3E374DA283 /* DigitalClockView.swift */; };
@@ -41,7 +42,10 @@
 		96F614020A341939E01D943E /* DSTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6431316B2546E467152BE8DF /* DSTService.swift */; };
 		9F924488CECCEF95D6E9EF2B /* WorldMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7128632E07C94E82B9F611 /* WorldMapView.swift */; };
 		A2D53AAABF8E177E04DDC1FA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60F3F9105E384B737A39C1 /* MainWindowController.swift */; };
+		A3941C8D2558337C355D8E35 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D7047964F030D2ADC14A6 /* SubscriptionManager.swift */; };
 		AEBAFAAB1BF884AADDDA591E /* CityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */; };
+		B10B85BC716FDE78A860B390 /* WeatherInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5A1C489BF0CA402B306445 /* WeatherInsights.swift */; };
+		B4D1173F6160D92BF08E5B44 /* SubscriptionTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08A1090FAA9ACFB13BC491 /* SubscriptionTier.swift */; };
 		B4FCEFD77DFBDD86D5A41C98 /* MeetingPlannerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CE14E75B774CF5965A845 /* MeetingPlannerSheet.swift */; };
 		BF8A1474C9E68DDF27ED8821 /* WidgetConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC8497C3F5B91103FF50FB /* WidgetConfigView.swift */; };
 		C39850A3F4EDF4E0CB310159 /* AddCitySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270CBC490792D6A136B7A72 /* AddCitySheet.swift */; };
@@ -85,8 +89,10 @@
 		8234A968310ABDB696F4CC4F /* ZonesR12R15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonesR12R15.swift; sourceTree = "<group>"; };
 		84FAEEFE71C84A1F5A077CE9 /* WidgetRefreshService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRefreshService.swift; sourceTree = "<group>"; };
 		86003D67EF2D55ACBF7FD978 /* ZONES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZONES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E08A1090FAA9ACFB13BC491 /* SubscriptionTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTier.swift; sourceTree = "<group>"; };
 		8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerService.swift; sourceTree = "<group>"; };
 		90B36C86A5D7263894092CFB /* SunPositionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunPositionService.swift; sourceTree = "<group>"; };
+		917D7047964F030D2ADC14A6 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		A036BE03A3E52EBEE3856456 /* iCloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSyncService.swift; sourceTree = "<group>"; };
 		A8045ED973BBF1F7C4FD2C7D /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
 		AA6CE14E75B774CF5965A845 /* MeetingPlannerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerSheet.swift; sourceTree = "<group>"; };
@@ -101,7 +107,9 @@
 		E4AC8497C3F5B91103FF50FB /* WidgetConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetConfigView.swift; sourceTree = "<group>"; };
 		E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneRowView.swift; sourceTree = "<group>"; };
 		E755CDFEA76712AB22FCF8E3 /* CityDetailPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailPopover.swift; sourceTree = "<group>"; };
+		ED5A1C489BF0CA402B306445 /* WeatherInsights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInsights.swift; sourceTree = "<group>"; };
 		ED60F3F9105E384B737A39C1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		F9555B1074787826BCF0CDF6 /* PrivacyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyService.swift; sourceTree = "<group>"; };
 		FA58E941D4414182636C3021 /* TimeFormatterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatterService.swift; sourceTree = "<group>"; };
 		FA7449CB84B12ABBE266B1A4 /* MeetingSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingSlot.swift; sourceTree = "<group>"; };
 		FB7128632E07C94E82B9F611 /* WorldMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldMapView.swift; sourceTree = "<group>"; };
@@ -201,6 +209,8 @@
 				DF11B70A5E716D07E9AA220E /* EventNotificationService.swift */,
 				A036BE03A3E52EBEE3856456 /* iCloudSyncService.swift */,
 				8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */,
+				F9555B1074787826BCF0CDF6 /* PrivacyService.swift */,
+				917D7047964F030D2ADC14A6 /* SubscriptionManager.swift */,
 				90B36C86A5D7263894092CFB /* SunPositionService.swift */,
 				001F81780A1180E7561899AB /* TimeConverterService.swift */,
 				FA58E941D4414182636C3021 /* TimeFormatterService.swift */,
@@ -226,6 +236,7 @@
 				36FFD1CE3EEA1C3468F7C6D3 /* City.swift */,
 				C5EFD8386066BD60F3F3D797 /* ClockFormat.swift */,
 				FA7449CB84B12ABBE266B1A4 /* MeetingSlot.swift */,
+				8E08A1090FAA9ACFB13BC491 /* SubscriptionTier.swift */,
 				40682A66BC3B65D445AB7B0D /* TimezoneData.swift */,
 				8234A968310ABDB696F4CC4F /* ZonesR12R15.swift */,
 			);
@@ -235,6 +246,7 @@
 		E42ACCCBE188C1E53EDFD8D4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				ED5A1C489BF0CA402B306445 /* WeatherInsights.swift */,
 				1849A2CAAF935769A36325ED /* App */,
 				57FCF413204F1016293B4917 /* Intents */,
 				3B9E703113A9E18999DF108A /* MenuBar */,
@@ -354,11 +366,15 @@
 				5BD3F6B2FE6BBF01D34AB155 /* MeetingSlot.swift in Sources */,
 				800F8CF057E47B31834559DD /* MenuBarController.swift in Sources */,
 				0F8E5737CABBF75F5F88388C /* MenuBarPopoverView.swift in Sources */,
+				7C3A86B057A6CC92BD3BC20B /* PrivacyService.swift in Sources */,
+				A3941C8D2558337C355D8E35 /* SubscriptionManager.swift in Sources */,
+				B4D1173F6160D92BF08E5B44 /* SubscriptionTier.swift in Sources */,
 				60E276644C27893D2DC044B9 /* SunPositionService.swift in Sources */,
 				FB520AB8501AAFDFE962A8DC /* TimeConverterService.swift in Sources */,
 				8B92257DB2DEE6FE67CC69F8 /* TimeConverterView.swift in Sources */,
 				0E03B88BE50BFCA6658049B3 /* TimeFormatterService.swift in Sources */,
 				4B1C65C30D458EA7EDC56A85 /* TimezoneData.swift in Sources */,
+				B10B85BC716FDE78A860B390 /* WeatherInsights.swift in Sources */,
 				02DF1906E83E772171BC8E6D /* WeatherService.swift in Sources */,
 				BF8A1474C9E68DDF27ED8821 /* WidgetConfigView.swift in Sources */,
 				E3ED04887C151614AB4C9B05 /* WidgetRefreshService.swift in Sources */,
