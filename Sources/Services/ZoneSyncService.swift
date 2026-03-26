@@ -43,38 +43,39 @@ final class ZoneSyncService {
     }
     
     private func saveCity(_ city: SyncedCity) async throws {
-        let record = CKRecord(recordType: "City")
+        let recordID = CKRecord.ID(recordName: city.id.uuidString)
+        let record = CKRecord(recordType: "City", recordID: recordID)
         record["cityId"] = city.id.uuidString as CKRecordValue
-        record["name"] = city.name as CKRecordValue
-        record["timezone"] = city.timezone as CKRecordValue
+        record["cityName"] = city.name as CKRecordValue
+        record["timezoneIdentifier"] = city.timezone as CKRecordValue
         record["country"] = city.country as CKRecordValue
-        record["order"] = city.order as CKRecordValue
-        
+        record["sortOrder"] = city.order as CKRecordValue
+
         try await privateDatabase.save(record)
     }
     
     func fetchCities() async throws -> [SyncedCity] {
         let query = CKQuery(recordType: "City", predicate: NSPredicate(value: true))
-        query.sortDescriptors = [NSSortDescriptor(key: "order", ascending: true)]
-        
+        query.sortDescriptors = [NSSortDescriptor(key: "sortOrder", ascending: true)]
+
         let (results, _) = try await privateDatabase.records(matching: query)
-        
+
         return results.compactMap { _, result -> SyncedCity? in
             guard case .success(let record) = result,
                   let idString = record["cityId"] as? String,
                   let id = UUID(uuidString: idString),
-                  let name = record["name"] as? String,
-                  let timezone = record["timezone"] as? String,
+                  let name = record["cityName"] as? String,
+                  let timezone = record["timezoneIdentifier"] as? String,
                   let country = record["country"] as? String else {
                 return nil
             }
-            
+
             return SyncedCity(
                 id: id,
                 name: name,
                 timezone: timezone,
                 country: country,
-                order: (record["order"] as? Int) ?? 0
+                order: (record["sortOrder"] as? Int) ?? 0
             )
         }
     }

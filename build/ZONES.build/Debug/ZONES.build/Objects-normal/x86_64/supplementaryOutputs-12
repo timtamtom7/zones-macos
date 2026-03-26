@@ -1,0 +1,37 @@
+{
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/SubscriptionTier.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionTier.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionTier.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionTier.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionTier.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionTier.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/PrivacyService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/PrivacyService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/PrivacyService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/PrivacyService.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/PrivacyService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/PrivacyService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/SubscriptionManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionManager.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SubscriptionManager.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/SunPositionService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SunPositionService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SunPositionService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SunPositionService.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SunPositionService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/SunPositionService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/TimeConverterService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterService.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterService.swiftdeps"
+  }
+}

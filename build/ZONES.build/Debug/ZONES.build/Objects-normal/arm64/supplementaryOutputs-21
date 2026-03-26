@@ -1,0 +1,37 @@
+{
+  "/Users/mauriello/Dev/zones-macos/Sources/App/ZONESApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Intents/ZoneIntents.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/ViewModels/ZoneListViewModel.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/ZoneListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/ZoneRowView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.swiftdeps"
+  }
+}

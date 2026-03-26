@@ -1,0 +1,37 @@
+{
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/TimezoneData.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimezoneData.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimezoneData.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimezoneData.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimezoneData.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimezoneData.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/TimeFormatterService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeFormatterService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeFormatterService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeFormatterService.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeFormatterService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeFormatterService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/WeatherService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherService.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/TimeConverterView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterView.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/TimeConverterView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/WeatherInsights.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherInsights.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherInsights.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherInsights.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherInsights.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/WeatherInsights.swiftdeps"
+  }
+}

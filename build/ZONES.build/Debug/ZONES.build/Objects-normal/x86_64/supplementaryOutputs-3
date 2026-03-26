@@ -1,0 +1,37 @@
+{
+  "/Users/mauriello/Dev/zones-macos/Sources/App/AppDelegate.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppDelegate.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppDelegate.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppDelegate.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppDelegate.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/App/AppState.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppState.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppState.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppState.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AppState.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/AdvancedZoneServices.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AdvancedZoneServices.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AdvancedZoneServices.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AdvancedZoneServices.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AdvancedZoneServices.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AdvancedZoneServices.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/AddCitySheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AddCitySheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AddCitySheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AddCitySheet.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AddCitySheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AddCitySheet.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/AnalogClockView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AnalogClockView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AnalogClockView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AnalogClockView.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AnalogClockView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/AnalogClockView.swiftdeps"
+  }
+}

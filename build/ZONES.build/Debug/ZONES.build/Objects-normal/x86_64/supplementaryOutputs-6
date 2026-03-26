@@ -1,0 +1,37 @@
+{
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/ClockFormat.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormat.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormat.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormat.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormat.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormat.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/ClockFormatService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormatService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormatService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormatService.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormatService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ClockFormatService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/DSTCalendarService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/DSTCalendarService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/DSTCalendarService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/DSTCalendarService.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/DSTCalendarService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/DSTCalendarService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/CompareZonesView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/CompareZonesView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/CompareZonesView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/CompareZonesView.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/CompareZonesView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/CompareZonesView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/ContentView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ContentView.dia",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/x86_64/ContentView.swiftdeps"
+  }
+}

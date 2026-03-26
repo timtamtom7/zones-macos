@@ -39,7 +39,7 @@ final class WeatherService {
         if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
            let currentCondition = (json["current_condition"] as? [[String: Any]])?.first,
            let tempC = currentCondition["temp_C"],
-           let weatherCode = (currentCondition["weatherCode"] as? String) ?? (currentCondition["weatherCode"] as? Int).map({ String($0) }) {
+           let weatherCode = (currentCondition["weatherCode"] as? String) ?? ((currentCondition["weatherCode"] as? Int).map { String($0) }) {
             let condition = conditionFromCode(weatherCode)
             let info = WeatherInfo(
                 temperature: Int(tempC as? String ?? "0") ?? 0,

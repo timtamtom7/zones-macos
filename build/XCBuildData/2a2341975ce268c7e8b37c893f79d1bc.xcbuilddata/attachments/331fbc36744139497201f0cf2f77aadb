@@ -1,0 +1,509 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONES-primary.dia",
+    "emit-module-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONES-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONES-primary-emit-module.dia",
+    "pch" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONES-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONES-primary.swiftdeps"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/App/AppDelegate.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/App/AppState.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AppState~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/App/MainWindowController.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MainWindowController~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/App/ZONESApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZONESApp~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/App/main.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/main~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Intents/ZoneIntents.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneIntents~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/MenuBar/MenuBarController.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarController~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/MenuBar/MenuBarPopoverView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MenuBarPopoverView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/City.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/City~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/ClockFormat.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormat~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/MeetingSlot.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingSlot~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/SubscriptionTier.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionTier~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/TimezoneData.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimezoneData~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Models/ZonesR12R15.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZonesR12R15~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/AdvancedZoneServices.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AdvancedZoneServices~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/CityDataLoader.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDataLoader~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/CityStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityStore~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/ClockFormatService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ClockFormatService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/DSTCalendarService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTCalendarService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/DSTService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DSTService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/DatabaseManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DatabaseManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/EventNotificationService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/EventNotificationService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/MeetingPlannerService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/PrivacyService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/PrivacyService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/SubscriptionManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SubscriptionManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/SunPositionService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/SunPositionService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/TimeConverterService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/TimeFormatterService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeFormatterService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/WeatherService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/WidgetRefreshService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetRefreshService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/WorkingHoursService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorkingHoursService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/ZoneSyncService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneSyncService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Services/iCloudSyncService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/iCloudSyncService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/ViewModels/CitySearchViewModel.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CitySearchViewModel~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/ViewModels/ZoneListViewModel.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListViewModel~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/AddCitySheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AddCitySheet~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/AnalogClockView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/AnalogClockView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/CityDetailPopover.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CityDetailPopover~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/CompareZonesView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/CompareZonesView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/ContentView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/DigitalClockView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/DigitalClockView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/MeetingPlannerSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/MeetingPlannerSheet~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/TimeConverterView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/TimeConverterView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/WidgetConfigView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WidgetConfigView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/WorldMapMiniView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapMiniView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/WorldMapView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WorldMapView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/ZoneListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneListView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/Views/ZoneRowView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/ZoneRowView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/Sources/WeatherInsights.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/WeatherInsights~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/zones-macos/build/ZONES.build/Debug/ZONES.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

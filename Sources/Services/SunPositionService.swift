@@ -26,8 +26,20 @@ final class SunPositionService {
 
         let elevation = asin(sin(latRad) * sin(decRad) + cos(latRad) * cos(decRad) * cos(haRad)) * 180 / .pi
 
-        // Solar azimuth
-        let azimuth = atan2(sin(haRad), cos(haRad) * sin(latRad) / tan(decRad) - sin(latRad) * cos(haRad)) * 180 / .pi + 180
+        // Solar azimuth - using atan2 with X/Y components to avoid div-by-zero
+        let cosHa = cos(haRad)
+        let sinHa = sin(haRad)
+        let cosLat = cos(latRad)
+        let sinLat = sin(latRad)
+        let cosDec = cos(decRad)
+        let sinDec = sin(decRad)
+
+        let azX = sinHa * cosDec
+        let azY = cosHa * cosDec * sinLat - sinDec * cosLat
+        var azimuth = atan2(azX, azY) * 180 / .pi
+
+        // Normalize to 0-360
+        if azimuth < 0 { azimuth += 360 }
 
         return SunPosition(azimuth: azimuth, elevation: elevation)
     }
@@ -57,24 +69,14 @@ final class WorldMapRenderer {
     }
 
     private func latitudeForTimezone(_ identifier: String) -> Double {
-        let coords: [String: (Double, Double)] = [
-            "America/Los_Angeles": (34.0, -118.0),
-            "America/New_York": (40.0, -74.0),
-            "Europe/London": (51.0, 0.0),
-            "Europe/Paris": (49.0, 2.0),
-            "Asia/Tokyo": (35.0, 139.0),
-            "Asia/Shanghai": (31.0, 121.0),
-            "Asia/Singapore": (1.0, 104.0),
-            "Australia/Sydney": (-33.0, 151.0),
-            "Pacific/Auckland": (-37.0, 175.0),
-        ]
-        if let coord = coords[identifier] {
-            return coord.0
-        }
-        return 0
+        coordinateForTimezone(identifier).0
     }
 
     private func longitudeForTimezone(_ identifier: String) -> Double {
+        coordinateForTimezone(identifier).1
+    }
+
+    private func coordinateForTimezone(_ identifier: String) -> (Double, Double) {
         let coords: [String: (Double, Double)] = [
             "America/Los_Angeles": (34.0, -118.0),
             "America/New_York": (40.0, -74.0),
@@ -86,9 +88,6 @@ final class WorldMapRenderer {
             "Australia/Sydney": (-33.0, 151.0),
             "Pacific/Auckland": (-37.0, 175.0),
         ]
-        if let coord = coords[identifier] {
-            return coord.1
-        }
-        return 0
+        return coords[identifier] ?? (0, 0)
     }
 }
