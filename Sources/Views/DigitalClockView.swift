@@ -6,18 +6,23 @@ struct DigitalClockView: View {
     let color: Color
 
     @State private var currentTime = Date()
-
-    private static let sharedTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State private var timer: Timer?
 
     var body: some View {
         let timeString = ClockFormatService.shared.formatTime(currentTime, in: timeZone, format: format)
 
         Text(timeString)
             .font(digitalFont)
-            .foregroundColor(color)
+            .foregroundStyle(color)
             .monospacedDigit()
-            .onReceive(Self.sharedTimer) { time in
-                currentTime = time
+            .onAppear {
+                timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+                    currentTime = Date()
+                }
+            }
+            .onDisappear {
+                timer?.invalidate()
+                timer = nil
             }
     }
 
@@ -25,11 +30,11 @@ struct DigitalClockView: View {
         let size: CGFloat = format.showSeconds ? 18 : 22
         switch format.fontStyle {
         case .system:
-            return .system(size: size, weight: .medium)
+            return .system(size: size, weight: .semibold)
         case .monospaced:
-            return .system(size: size, weight: .medium, design: .monospaced)
+            return .system(size: size, weight: .semibold, design: .monospaced)
         case .rounded:
-            return .system(size: size, weight: .medium, design: .rounded)
+            return .system(size: size, weight: .semibold, design: .rounded)
         }
     }
 }

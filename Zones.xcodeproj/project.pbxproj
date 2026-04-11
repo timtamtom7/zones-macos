@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02657215D9F7B150D1E17355 /* ZoneSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3F42CD0DB55AC87E203FE /* ZoneSyncService.swift */; };
 		02DF1906E83E772171BC8E6D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACE8E72BC90A62DA155DD4 /* WeatherService.swift */; };
 		0E03B88BE50BFCA6658049B3 /* TimeFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58E941D4414182636C3021 /* TimeFormatterService.swift */; };
 		0F8E5737CABBF75F5F88388C /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117425221186BA747E0260D6 /* MenuBarPopoverView.swift */; };
 		16159CFAA87DE61427E2439E /* ZoneIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9765FE267A9C8110B51B6 /* ZoneIntents.swift */; };
+		166CD39562BD63CEB7A369F7 /* MeetingPlannerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EE85AB034699611D6669FA /* MeetingPlannerServiceTests.swift */; };
 		1917342CFC87158A0668F07F /* WorkingHoursService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612B66B3157455C9E1E7728 /* WorkingHoursService.swift */; };
 		226B59D5188801EB3FCE0573 /* iCloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036BE03A3E52EBEE3856456 /* iCloudSyncService.swift */; };
-		24B9D7BBA3238AA3C101A736 /* ZoneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E3B939E8C515B5670171D /* ZoneListViewModel.swift */; };
 		2AE9D3CA41E6B88A3523058F /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABD469C480680EEE704CE9 /* AnalogClockView.swift */; };
 		2B8DF0D81E07CAC6E71F947F /* DSTCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D5216DA61DAF64EEEE193 /* DSTCalendarService.swift */; };
 		2C1579F1F475864EE0BB8E81 /* CompareZonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E1D7C76AEE837EA65A5B3 /* CompareZonesView.swift */; };
 		305FB1A4EFC6A48C4C841617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B638F7BC3DE8DD1CC0B44F8 /* Assets.xcassets */; };
+		4A94CDB8D365418A670DA753 /* WorkingHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6A30380F759DD853E18AA /* WorkingHoursTests.swift */; };
 		4B1C65C30D458EA7EDC56A85 /* TimezoneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40682A66BC3B65D445AB7B0D /* TimezoneData.swift */; };
 		519BC4789A86F0CD8D304341 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B26B59EE39B727799EAAD4C /* AppState.swift */; };
 		541E49AD44340CAE430161D7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFD1CE3EEA1C3468F7C6D3 /* City.swift */; };
@@ -36,6 +36,7 @@
 		80FEBC16F3E05F108739FD00 /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13D632B2530F3E374DA283 /* DigitalClockView.swift */; };
 		8139E64EC0F390683FEB2196 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */; };
 		8195DC2F0A4ED3F346B9256A /* ZONESApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFC10AEBF9A1BD22F17E22 /* ZONESApp.swift */; };
+		8AFDE726BE1065F878663890 /* CoordinateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621C5AAEB960FCA44DFE1BF /* CoordinateServiceTests.swift */; };
 		8B80740EDBE78910A54493E9 /* CityDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E475935964A1A4CC07528 /* CityDataLoader.swift */; };
 		8B92257DB2DEE6FE67CC69F8 /* TimeConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F985807F937C63C7851C41F /* TimeConverterView.swift */; };
 		8FEF2810D6DDAC1969702FD0 /* WorldMapMiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BBAC76DE8339B30F78494 /* WorldMapMiniView.swift */; };
@@ -50,15 +51,29 @@
 		BF8A1474C9E68DDF27ED8821 /* WidgetConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC8497C3F5B91103FF50FB /* WidgetConfigView.swift */; };
 		C39850A3F4EDF4E0CB310159 /* AddCitySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270CBC490792D6A136B7A72 /* AddCitySheet.swift */; };
 		C753A91B80C60283A5E0B1BE /* ZoneListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */; };
+		CE8046B9AE809F6114931440 /* TimeFormatterServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1AD3ACFA636DBF7508F63 /* TimeFormatterServiceTests.swift */; };
 		CE95785639B5385CE53C4AB9 /* MeetingPlannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */; };
 		D6C764A550111E3BFF4357B9 /* CityDetailPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755CDFEA76712AB22FCF8E3 /* CityDetailPopover.swift */; };
 		D82EF1A28A2BCC9F3B35BA00 /* ZoneRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E672023DDB0600B7B8E29D7F /* ZoneRowView.swift */; };
 		E3ED04887C151614AB4C9B05 /* WidgetRefreshService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEEFE71C84A1F5A077CE9 /* WidgetRefreshService.swift */; };
 		F51C2C813DF0A62A8089365D /* EventNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11B70A5E716D07E9AA220E /* EventNotificationService.swift */; };
+		F7ACCBC4BBA6F30500ADEFA9 /* EditCitySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22FDB9D0C0FF2B188B8D3A /* EditCitySheet.swift */; };
 		F9286DDC3C71A2924B7E7B36 /* ClockFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EFD8386066BD60F3F3D797 /* ClockFormat.swift */; };
+		F94FCE62FC92D331740B98E5 /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873CE219BF73B6363D1744D /* CityTests.swift */; };
 		FB520AB8501AAFDFE962A8DC /* TimeConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F81780A1180E7561899AB /* TimeConverterService.swift */; };
 		FDAC2A012C1709B20700EC43 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = F8E4065F0714259161455563 /* SQLite */; };
+		FE325399BC17665AB773B9E5 /* CoordinateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB0DE25E727388C38249BD /* CoordinateService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3378FC64AE334F03FCB78577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4EDCB3037E171B218826F9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3102BF9D5607D6D2EECBC2B2;
+			remoteInfo = ZONES;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		001F81780A1180E7561899AB /* TimeConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterService.swift; sourceTree = "<group>"; };
@@ -70,20 +85,23 @@
 		1612B66B3157455C9E1E7728 /* WorkingHoursService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingHoursService.swift; sourceTree = "<group>"; };
 		1A1C860FBF23C0BDB37FB9DA /* ZoneListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListView.swift; sourceTree = "<group>"; };
 		1D190A94D075319AD538B1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		21C6A30380F759DD853E18AA /* WorkingHoursTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingHoursTests.swift; sourceTree = "<group>"; };
 		224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
 		236BBAC76DE8339B30F78494 /* WorldMapMiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldMapMiniView.swift; sourceTree = "<group>"; };
+		2ADB0DE25E727388C38249BD /* CoordinateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateService.swift; sourceTree = "<group>"; };
 		2F567BBDA25DA3663E38EAFE /* ZONES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZONES.entitlements; sourceTree = "<group>"; };
+		30D1AD3ACFA636DBF7508F63 /* TimeFormatterServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatterServiceTests.swift; sourceTree = "<group>"; };
+		35EE85AB034699611D6669FA /* MeetingPlannerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerServiceTests.swift; sourceTree = "<group>"; };
 		36FFD1CE3EEA1C3468F7C6D3 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		404861EB35D68F43F0A26DB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40682A66BC3B65D445AB7B0D /* TimezoneData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneData.swift; sourceTree = "<group>"; };
 		4D05EC5C860AC7764C933EE8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		56A3F42CD0DB55AC87E203FE /* ZoneSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneSyncService.swift; sourceTree = "<group>"; };
 		5F985807F937C63C7851C41F /* TimeConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterView.swift; sourceTree = "<group>"; };
-		636E3B939E8C515B5670171D /* ZoneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneListViewModel.swift; sourceTree = "<group>"; };
 		6431316B2546E467152BE8DF /* DSTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTService.swift; sourceTree = "<group>"; };
 		6B26B59EE39B727799EAAD4C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStore.swift; sourceTree = "<group>"; };
 		7BABD469C480680EEE704CE9 /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
+		7D22FDB9D0C0FF2B188B8D3A /* EditCitySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCitySheet.swift; sourceTree = "<group>"; };
 		80A9765FE267A9C8110B51B6 /* ZoneIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneIntents.swift; sourceTree = "<group>"; };
 		80ACE8E72BC90A62DA155DD4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		8234A968310ABDB696F4CC4F /* ZonesR12R15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonesR12R15.swift; sourceTree = "<group>"; };
@@ -93,12 +111,15 @@
 		8ED57C596B2CE91ECE110835 /* MeetingPlannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerService.swift; sourceTree = "<group>"; };
 		90B36C86A5D7263894092CFB /* SunPositionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunPositionService.swift; sourceTree = "<group>"; };
 		917D7047964F030D2ADC14A6 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		9873CE219BF73B6363D1744D /* CityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
 		A036BE03A3E52EBEE3856456 /* iCloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSyncService.swift; sourceTree = "<group>"; };
 		A8045ED973BBF1F7C4FD2C7D /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
 		AA6CE14E75B774CF5965A845 /* MeetingPlannerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPlannerSheet.swift; sourceTree = "<group>"; };
 		B270CBC490792D6A136B7A72 /* AddCitySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCitySheet.swift; sourceTree = "<group>"; };
 		B38E475935964A1A4CC07528 /* CityDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataLoader.swift; sourceTree = "<group>"; };
+		B621C5AAEB960FCA44DFE1BF /* CoordinateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateServiceTests.swift; sourceTree = "<group>"; };
 		BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		BED45A7459A44A815CCC3E57 /* ZONESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZONESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EFD8386066BD60F3F3D797 /* ClockFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFormat.swift; sourceTree = "<group>"; };
 		CAC1846D28F7DC2D008D3714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3D5216DA61DAF64EEEE193 /* DSTCalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTCalendarService.swift; sourceTree = "<group>"; };
@@ -159,6 +180,7 @@
 				157E1D7C76AEE837EA65A5B3 /* CompareZonesView.swift */,
 				404861EB35D68F43F0A26DB8 /* ContentView.swift */,
 				0A13D632B2530F3E374DA283 /* DigitalClockView.swift */,
+				7D22FDB9D0C0FF2B188B8D3A /* EditCitySheet.swift */,
 				AA6CE14E75B774CF5965A845 /* MeetingPlannerSheet.swift */,
 				5F985807F937C63C7851C41F /* TimeConverterView.swift */,
 				E4AC8497C3F5B91103FF50FB /* WidgetConfigView.swift */,
@@ -187,11 +209,22 @@
 			path = Intents;
 			sourceTree = "<group>";
 		};
+		7C6DA02817AFA908257D6845 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9873CE219BF73B6363D1744D /* CityTests.swift */,
+				B621C5AAEB960FCA44DFE1BF /* CoordinateServiceTests.swift */,
+				35EE85AB034699611D6669FA /* MeetingPlannerServiceTests.swift */,
+				30D1AD3ACFA636DBF7508F63 /* TimeFormatterServiceTests.swift */,
+				21C6A30380F759DD853E18AA /* WorkingHoursTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		899AD67F03E4E592499F5336 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				224C3E5B5D613FF9FE71C59A /* CitySearchViewModel.swift */,
-				636E3B939E8C515B5670171D /* ZoneListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -203,6 +236,7 @@
 				B38E475935964A1A4CC07528 /* CityDataLoader.swift */,
 				6E605EBB5E7850BA6E2E6B08 /* CityStore.swift */,
 				FCCA2BCD98E82B04AA8FE7D3 /* ClockFormatService.swift */,
+				2ADB0DE25E727388C38249BD /* CoordinateService.swift */,
 				BB990C95B9F0244BDB841BE3 /* DatabaseManager.swift */,
 				CE3D5216DA61DAF64EEEE193 /* DSTCalendarService.swift */,
 				6431316B2546E467152BE8DF /* DSTService.swift */,
@@ -217,7 +251,6 @@
 				80ACE8E72BC90A62DA155DD4 /* WeatherService.swift */,
 				84FAEEFE71C84A1F5A077CE9 /* WidgetRefreshService.swift */,
 				1612B66B3157455C9E1E7728 /* WorkingHoursService.swift */,
-				56A3F42CD0DB55AC87E203FE /* ZoneSyncService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -226,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				86003D67EF2D55ACBF7FD978 /* ZONES.app */,
+				BED45A7459A44A815CCC3E57 /* ZONESTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				E42ACCCBE188C1E53EDFD8D4 /* Sources */,
+				7C6DA02817AFA908257D6845 /* Tests */,
 				C4CE4AF60C7FAE999076828F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -290,6 +325,22 @@
 			productReference = 86003D67EF2D55ACBF7FD978 /* ZONES.app */;
 			productType = "com.apple.product-type.application";
 		};
+		50FBACD540298E8E0D966509 /* ZONESTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F541B969D89CD3F28A7EA5F /* Build configuration list for PBXNativeTarget "ZONESTests" */;
+			buildPhases = (
+				6C6587CD0119B0CD752B8C92 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0F40866AA1CE328E6313F1F /* PBXTargetDependency */,
+			);
+			name = ZONESTests;
+			productName = ZONESTests;
+			productReference = BED45A7459A44A815CCC3E57 /* ZONESTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -300,6 +351,10 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					3102BF9D5607D6D2EECBC2B2 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					50FBACD540298E8E0D966509 = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Manual;
 					};
@@ -321,6 +376,7 @@
 			projectRoot = "";
 			targets = (
 				3102BF9D5607D6D2EECBC2B2 /* ZONES */,
+				50FBACD540298E8E0D966509 /* ZONESTests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,6 +393,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C6587CD0119B0CD752B8C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94FCE62FC92D331740B98E5 /* CityTests.swift in Sources */,
+				8AFDE726BE1065F878663890 /* CoordinateServiceTests.swift in Sources */,
+				166CD39562BD63CEB7A369F7 /* MeetingPlannerServiceTests.swift in Sources */,
+				CE8046B9AE809F6114931440 /* TimeFormatterServiceTests.swift in Sources */,
+				4A94CDB8D365418A670DA753 /* WorkingHoursTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3DC99C643F2819FDE81430A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,10 +423,12 @@
 				64FEC547F6FB2626D9F85C53 /* ClockFormatService.swift in Sources */,
 				2C1579F1F475864EE0BB8E81 /* CompareZonesView.swift in Sources */,
 				5BB55CD43C6C806F9BDAC759 /* ContentView.swift in Sources */,
+				FE325399BC17665AB773B9E5 /* CoordinateService.swift in Sources */,
 				2B8DF0D81E07CAC6E71F947F /* DSTCalendarService.swift in Sources */,
 				96F614020A341939E01D943E /* DSTService.swift in Sources */,
 				8139E64EC0F390683FEB2196 /* DatabaseManager.swift in Sources */,
 				80FEBC16F3E05F108739FD00 /* DigitalClockView.swift in Sources */,
+				F7ACCBC4BBA6F30500ADEFA9 /* EditCitySheet.swift in Sources */,
 				F51C2C813DF0A62A8089365D /* EventNotificationService.swift in Sources */,
 				A2D53AAABF8E177E04DDC1FA /* MainWindowController.swift in Sources */,
 				CE95785639B5385CE53C4AB9 /* MeetingPlannerService.swift in Sources */,
@@ -384,9 +454,7 @@
 				8195DC2F0A4ED3F346B9256A /* ZONESApp.swift in Sources */,
 				16159CFAA87DE61427E2439E /* ZoneIntents.swift in Sources */,
 				C753A91B80C60283A5E0B1BE /* ZoneListView.swift in Sources */,
-				24B9D7BBA3238AA3C101A736 /* ZoneListViewModel.swift in Sources */,
 				D82EF1A28A2BCC9F3B35BA00 /* ZoneRowView.swift in Sources */,
-				02657215D9F7B150D1E17355 /* ZoneSyncService.swift in Sources */,
 				6085060B8F189688BEB2B77D /* ZonesR12R15.swift in Sources */,
 				226B59D5188801EB3FCE0573 /* iCloudSyncService.swift in Sources */,
 				7403022A06B5E98A24A0B493 /* main.swift in Sources */,
@@ -395,7 +463,32 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A0F40866AA1CE328E6313F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3102BF9D5607D6D2EECBC2B2 /* ZONES */;
+			targetProxy = 3378FC64AE334F03FCB78577 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		416AD465C68A8EDABA7F1643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zones.app.tests;
+				PRODUCT_NAME = ZONESTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZONES.app/Contents/MacOS/ZONES";
+			};
+			name = Release;
+		};
 		6B75441983450F5573264E04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -555,9 +648,35 @@
 			};
 			name = Debug;
 		};
+		D81DF43A8F7591F6FDC52AE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zones.app.tests;
+				PRODUCT_NAME = ZONESTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZONES.app/Contents/MacOS/ZONES";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F541B969D89CD3F28A7EA5F /* Build configuration list for PBXNativeTarget "ZONESTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81DF43A8F7591F6FDC52AE9 /* Debug */,
+				416AD465C68A8EDABA7F1643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		C7CB38BEC56505C26FA319A4 /* Build configuration list for PBXProject "ZONES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -18,16 +18,21 @@ struct WidgetConfigView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Widget Configuration")
-                .font(.headline)
+            HStack {
+                Text("Widget Configuration")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                Spacer()
+            }
             
             Toggle("Show DST Indicators", isOn: $showDST)
-                .toggleStyle(.checkbox)
+                .accessibilityLabel("Show DST indicators")
+                .accessibilityHint("When enabled, shows daylight saving time indicators in the widget")
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("Time Format")
                     .font(.subheadline)
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
                 
                 Picker("Time Format", selection: $selectedFormat) {
                     ForEach(TimeFormatOption.allCases, id: \.self) { option in
@@ -35,6 +40,8 @@ struct WidgetConfigView: View {
                     }
                 }
                 .pickerStyle(.segmented)
+                .accessibilityLabel("Time format")
+                .accessibilityHint("Select 12-hour or 24-hour time format for the widget")
             }
             
             Spacer()
@@ -44,10 +51,12 @@ struct WidgetConfigView: View {
                 Button("Save") {
                     saveWidgetConfig()
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(.capsule)
+                .accessibilityLabel("Save widget configuration")
+                .accessibilityHint("Saves the current widget settings and refreshes the widget")
             }
         }
-        .padding()
+        .padding(16)
         .frame(width: 300, height: 200)
     }
     
@@ -65,25 +74,30 @@ struct ICloudSyncSettingsView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("iCloud Sync")
-                .font(.headline)
+            HStack {
+                Text("iCloud Sync")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                Spacer()
+            }
             
             Toggle("Enable iCloud Sync", isOn: $isSyncEnabled)
-                .toggleStyle(.checkbox)
+                .accessibilityLabel("Enable iCloud sync")
+                .accessibilityHint("When enabled, your zones data will sync across devices via iCloud")
                 .onChange(of: isSyncEnabled) { newValue in
                     iCloudSyncService.shared.setSyncEnabled(newValue)
                 }
             
             HStack {
                 Text("Status:")
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
                 statusView
             }
             
             if let lastSync = iCloudSyncService.shared.lastSyncDate {
                 Text("Last synced: \(lastSync.formatted(date: .abbreviated, time: .shortened))")
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
             }
             
             Spacer()
@@ -93,11 +107,13 @@ struct ICloudSyncSettingsView: View {
                 Button("Sync Now") {
                     iCloudSyncService.shared.syncAll()
                 }
-                .buttonStyle(.bordered)
+                .buttonStyle(.capsule)
                 .disabled(syncStatus == .syncing)
+                .accessibilityLabel("Sync now")
+                .accessibilityHint("Manually triggers an immediate sync of your zones data to iCloud")
             }
         }
-        .padding()
+        .padding(16)
         .frame(width: 300, height: 220)
     }
     
@@ -106,23 +122,23 @@ struct ICloudSyncSettingsView: View {
         switch syncStatus {
         case .idle:
             Text("Ready")
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
         case .syncing:
             ProgressView()
                 .scaleEffect(0.5)
                 .frame(width: 16, height: 16)
             Text("Syncing...")
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
         case .success:
             Image(systemName: "checkmark.circle.fill")
-                .foregroundColor(.green)
+                .foregroundStyle(.green)
             Text("Synced")
-                .foregroundColor(.green)
+                .foregroundStyle(.green)
         case .error(let message):
             Image(systemName: "exclamationmark.triangle.fill")
-                .foregroundColor(.orange)
+                .foregroundStyle(.orange)
             Text(message)
-                .foregroundColor(.orange)
+                .foregroundStyle(.orange)
                 .lineLimit(1)
         }
     }

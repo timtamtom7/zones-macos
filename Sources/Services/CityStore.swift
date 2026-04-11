@@ -1,23 +1,50 @@
 import Foundation
 import SQLite
 
+enum CityStoreError: LocalizedError {
+    case databaseNotAvailable
+    case cityNotFound
+    case invalidCityData
+    case databaseError(Error)
+    
+    var errorDescription: String? {
+        switch self {
+        case .databaseNotAvailable:
+            return "Database is not available"
+        case .cityNotFound:
+            return "City not found"
+        case .invalidCityData:
+            return "Invalid city data"
+        case .databaseError(let error):
+            return "Database error: \(error.localizedDescription)"
+        }
+    }
+}
+
+@MainActor
 class CityStore: ObservableObject {
     static let shared = CityStore()
 
     private var db: Connection? { DatabaseManager.shared.getConnection() }
     
     @Published var cities: [City] = []
+    @Published var lastError: CityStoreError?
 
     private init() {
         loadCities()
     }
 
     func loadCities() {
-        cities = getAllCities()
+        do {
+            cities = try getAllCities()
+        } catch {
+            lastError = error as? CityStoreError ?? .databaseError(error)
+            cities = []
+        }
     }
 
-    func getAllCities() -> [City] {
-        guard let db = db else { return [] }
+    func getAllCities() throws -> [City] {
+        guard let db = db else { throw CityStoreError.databaseNotAvailable }
 
         let cities = Table("cities")
         let id = SQLite.Expression<String>("id")
@@ -27,6 +54,8 @@ class CityStore: ObservableObject {
         let sortOrder = SQLite.Expression<Int>("sort_order")
         let isLocal = SQLite.Expression<Bool>("is_local")
         let isFavorite = SQLite.Expression<Bool>("is_favorite")
+        let nickname = SQLite.Expression<String?>("nickname")
+        let colorHex = SQLite.Expression<String?>("color_hex")
 
         var result: [City] = []
         do {
@@ -38,18 +67,20 @@ class CityStore: ObservableObject {
                     timezoneIdentifier: row[timezoneId],
                     sortOrder: row[sortOrder],
                     isLocal: row[isLocal],
-                    isFavorite: row[isFavorite]
+                    isFavorite: row[isFavorite],
+                    nickname: row[nickname],
+                    colorHex: row[colorHex]
                 )
                 result.append(city)
             }
         } catch {
-            print("Error loading cities: \(error)")
+            throw CityStoreError.databaseError(error)
         }
         return result
     }
 
-    func saveCity(_ city: City) {
-        guard let db = db else { return }
+    func saveCity(_ city: City) throws {
+        guard let db = db else { throw CityStoreError.databaseNotAvailable }
 
         let cities = Table("cities")
         let id = SQLite.Expression<String>("id")
@@ -59,6 +90,8 @@ class CityStore: ObservableObject {
         let sortOrder = SQLite.Expression<Int>("sort_order")
         let isLocal = SQLite.Expression<Bool>("is_local")
         let isFavorite = SQLite.Expression<Bool>("is_favorite")
+        let nickname = SQLite.Expression<String?>("nickname")
+        let colorHex = SQLite.Expression<String?>("color_hex")
 
         do {
             try db.run(cities.insert(or: .replace,
@@ -68,19 +101,21 @@ class CityStore: ObservableObject {
                 timezoneId <- city.timezoneIdentifier,
                 sortOrder <- city.sortOrder,
                 isLocal <- city.isLocal,
-                isFavorite <- city.isFavorite
+                isFavorite <- city.isFavorite,
+                nickname <- city.nickname,
+                colorHex <- city.colorHex
             ))
         } catch {
-            print("Error saving city: \(error)")
+            throw CityStoreError.databaseError(error)
         }
     }
 
-    func updateCity(_ city: City) {
-        saveCity(city)
+    func updateCity(_ city: City) throws {
+        try saveCity(city)
     }
 
-    func deleteCity(_ cityId: UUID) {
-        guard let db = db else { return }
+    func deleteCity(_ cityId: UUID) throws {
+        guard let db = db else { throw CityStoreError.databaseNotAvailable }
 
         let cities = Table("cities")
         let id = SQLite.Expression<String>("id")
@@ -89,7 +124,7 @@ class CityStore: ObservableObject {
         do {
             try db.run(cityRow.delete())
         } catch {
-            print("Error deleting city: \(error)")
+            throw CityStoreError.databaseError(error)
         }
     }
 }

@@ -1,5 +1,6 @@
 import AppKit
 import SwiftUI
+import UserNotifications
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     var mainWindowController: MainWindowController?
@@ -12,6 +13,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         NSApp.setActivationPolicy(.regular)
         NSApp.activate(ignoringOtherApps: true)
+
+        // Request notification authorization and wire up delegate
+        EventNotificationService.shared.requestAuthorization()
+        UNUserNotificationCenter.current().delegate = EventNotificationService.shared
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {

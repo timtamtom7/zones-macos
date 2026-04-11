@@ -13,10 +13,10 @@ final class TimeConverterService: ObservableObject {
         targetZones.compactMap { city in
             guard let tz = city.timezone else { return nil }
 
-            var sourceCalendar = Calendar.current
+            var sourceCalendar = Calendar(identifier: .gregorian)
             sourceCalendar.timeZone = sourceZone
 
-            var targetCalendar = Calendar.current
+            var targetCalendar = Calendar(identifier: .gregorian)
             targetCalendar.timeZone = tz
 
             let sourceDay = sourceCalendar.component(.day, from: time)
@@ -39,10 +39,14 @@ final class TimeConverterService: ObservableObject {
     }
 
     func formatOffset(from source: TimeZone, to target: TimeZone) -> String {
-        let sourceOffset = source.secondsFromGMT() / 3600
-        let targetOffset = target.secondsFromGMT() / 3600
+        let sourceOffset = Double(source.secondsFromGMT()) / 3600.0
+        let targetOffset = Double(target.secondsFromGMT()) / 3600.0
         let diff = targetOffset - sourceOffset
         let sign = diff >= 0 ? "+" : ""
-        return "\(sign)\(diff)h"
+        if diff.truncatingRemainder(dividingBy: 1) == 0 {
+            return "\(sign)\(Int(diff))h"
+        } else {
+            return "\(sign)\(diff)h"
+        }
     }
 }

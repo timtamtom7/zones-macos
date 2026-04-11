@@ -29,7 +29,24 @@ public final class ZonesPrivacyService {
     }
     
     public func wipeAllData() {
-        if let bundleId = Bundle.main.bundleIdentifier { UserDefaults.standard.removePersistentDomain(forName: bundleId) }
+        // Wipe UserDefaults
+        if let bundleId = Bundle.main.bundleIdentifier {
+            UserDefaults.standard.removePersistentDomain(forName: bundleId)
+        }
+
+        // Wipe SQLite database
+        let fileManager = FileManager.default
+        if let appSupport = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first {
+            let dbURL = appSupport.appendingPathComponent("ZONES/zones.db")
+            try? fileManager.removeItem(at: dbURL)
+        }
+
+        // Wipe Keychain entries
+        let keychainQuery: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: keychainService
+        ]
+        SecItemDelete(keychainQuery as CFDictionary)
     }
     
     public static var privacyManifest: [String: Any] {

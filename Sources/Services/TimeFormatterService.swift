@@ -1,54 +1,39 @@
 import Foundation
 
-class TimeFormatterService {
+@MainActor
+final class TimeFormatterService {
     static let shared = TimeFormatterService()
 
-    private var timeFormatter12: DateFormatter = {
-        let f = DateFormatter()
-        f.dateFormat = "h:mm:ss a"
-        return f
-    }()
-
-    private var timeFormatter24: DateFormatter = {
-        let f = DateFormatter()
-        f.dateFormat = "HH:mm:ss"
-        return f
-    }()
-
-    private var timeFormatter12Short: DateFormatter = {
-        let f = DateFormatter()
-        f.dateFormat = "h:mm a"
-        return f
-    }()
-
-    private var timeFormatter24Short: DateFormatter = {
-        let f = DateFormatter()
-        f.dateFormat = "HH:mm"
-        return f
-    }()
+    private let formatter12Format = "h:mm:ss a"
+    private let formatter24Format = "HH:mm:ss"
+    private let formatter12ShortFormat = "h:mm a"
+    private let formatter24ShortFormat = "HH:mm"
 
     private init() {}
 
     func formatTime(_ date: Date, timezone: TimeZone, use24Hour: Bool) -> String {
-        let formatter = use24Hour ? timeFormatter24 : timeFormatter12
-        formatter.timeZone = timezone
-        return formatter.string(from: date)
+        let format = use24Hour ? formatter24Format : formatter12Format
+        return formatTime(date, timezone: timezone, format: format)
     }
 
     func formatTimeShort(_ date: Date, timezone: TimeZone, use24Hour: Bool) -> String {
-        let formatter = use24Hour ? timeFormatter24Short : timeFormatter12Short
-        formatter.timeZone = timezone
-        return formatter.string(from: date)
+        let format = use24Hour ? formatter24ShortFormat : formatter12ShortFormat
+        return formatTime(date, timezone: timezone, format: format)
     }
 
     func formatTimeWithSeconds(_ date: Date, timezone: TimeZone, use24Hour: Bool) -> String {
-        let formatter = use24Hour ? timeFormatter24 : timeFormatter12
+        formatTime(date, timezone: timezone, use24Hour: use24Hour)
+    }
+
+    private func formatTime(_ date: Date, timezone: TimeZone, format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
         formatter.timeZone = timezone
         return formatter.string(from: date)
     }
 
     func getTimezoneAbbreviation(for city: City) -> String {
-        return city.timezone?.abbreviation() ?? ""
+        city.timezone?.abbreviation() ?? ""
     }
 
     func getTimezoneOffset(for city: City) -> String {

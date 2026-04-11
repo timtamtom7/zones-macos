@@ -24,7 +24,7 @@ final class WorkingHoursService {
         let hours = getWorkingHours(for: city.id.uuidString)
         guard let tz = city.timezone else { return .outside }
 
-        var calendar = Calendar.current
+        var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = tz
         let components = calendar.dateComponents([.hour, .minute], from: time)
         let minutesFromMidnight = (components.hour ?? 0) * 60 + (components.minute ?? 0)

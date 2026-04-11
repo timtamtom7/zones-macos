@@ -23,25 +23,27 @@ struct CityDetailPopover: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            // City name
             HStack {
                 Text(city.name)
                     .font(.headline)
+                    .fontWeight(.semibold)
                 Spacer()
                 Button(action: { isPresented = false }) {
                     Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
                 }
                 .buttonStyle(.plain)
             }
 
             TextField("Nickname", text: $nickname)
-                .textFieldStyle(.roundedBorder)
+                .textFieldStyle(.plain)
+                .padding(10)
+                .background(.ultraThinMaterial)
+                .clipShape(.rect(cornerRadius: 12, style: .continuous))
 
-            // Display mode
             Text("Display Mode")
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
 
             Picker("Mode", selection: $selectedMode) {
                 Text("Digital").tag(ClockDisplayMode.digital)
@@ -50,36 +52,35 @@ struct CityDetailPopover: View {
             }
             .pickerStyle(.segmented)
 
-            // Color label
             Text("Color Label")
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
 
             HStack(spacing: 8) {
                 ForEach(colors, id: \.self) { color in
                     Circle()
                         .fill(Color(hex: color) ?? .blue)
-                        .frame(width: 20, height: 20)
+                        .frame(width: 24, height: 24)
                         .overlay(
                             Circle()
                                 .stroke(selectedColor == color ? Color.white : Color.clear, lineWidth: 2)
                         )
+                        .shadow(color: selectedColor == color ? Color(hex: color)?.opacity(0.5) ?? .clear : .clear, radius: 4)
                         .onTapGesture {
                             selectedColor = color
                         }
                 }
             }
 
-            // Hide from menu bar
             Toggle("Hide from menu bar", isOn: $hideFromMenuBar)
 
             Button("Save") {
                 saveSettings()
                 isPresented = false
             }
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(.capsule)
         }
-        .padding()
+        .padding(16)
         .frame(width: 280)
     }
 
@@ -99,22 +100,6 @@ struct CityDetailPopover: View {
             colorLabel: selectedColor,
             isHiddenFromMenuBar: hideFromMenuBar,
             updatedAt: Date()
-        )
-    }
-}
-
-extension Color {
-    init?(hex: String) {
-        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
-        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
-
-        var rgb: UInt64 = 0
-        guard Scanner(string: hexSanitized).scanHexInt64(&rgb) else { return nil }
-
-        self.init(
-            red: Double((rgb & 0xFF0000) >> 16) / 255,
-            green: Double((rgb & 0x00FF00) >> 8) / 255,
-            blue: Double(rgb & 0x0000FF) / 255
         )
     }
 }

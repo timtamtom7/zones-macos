@@ -17,6 +17,7 @@ struct WeatherInfo: Codable {
     }
 }
 
+@MainActor
 final class WeatherService {
     static let shared = WeatherService()
 

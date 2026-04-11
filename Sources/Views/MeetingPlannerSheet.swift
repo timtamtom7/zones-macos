@@ -15,9 +15,22 @@ struct MeetingPlannerSheet: View {
     private let durationOptions: [TimeInterval] = [1800, 3600, 5400, 7200, 10800]
 
     var body: some View {
-        VStack(spacing: 16) {
-            Text("Plan a Meeting")
-                .font(.headline)
+        VStack(spacing: 0) {
+            HStack {
+                Text("Plan a Meeting")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                Spacer()
+                Button(action: { isPresented = false }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(.secondary)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Close meeting planner")
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
 
             Form {
                 Picker("Duration", selection: $duration) {
@@ -30,7 +43,7 @@ struct MeetingPlannerSheet: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Participants")
                         .font(.caption)
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
 
                     ForEach(Array(selectedCities), id: \.self) { cityId in
                         if let city = cityStore.cities.first(where: { $0.id.uuidString == cityId }) {
@@ -39,7 +52,7 @@ struct MeetingPlannerSheet: View {
                                 Spacer()
                                 Button(action: { selectedCities.remove(cityId) }) {
                                     Image(systemName: "xmark.circle.fill")
-                                        .foregroundColor(.secondary)
+                                        .foregroundStyle(.secondary)
                                 }
                                 .buttonStyle(.plain)
                             }
@@ -55,17 +68,24 @@ struct MeetingPlannerSheet: View {
                     } label: {
                         Label("Add Timezone", systemImage: "plus")
                     }
+                    .accessibilityLabel("Add timezone participant")
+                    .accessibilityHint("Opens a menu to select additional cities for the meeting")
                 }
 
                 HStack {
                     DatePicker("From", selection: $workingHoursStart, displayedComponents: .hourAndMinute)
                         .labelsHidden()
+                        .accessibilityLabel("Working hours start time")
                     DatePicker("To", selection: $workingHoursEnd, displayedComponents: .hourAndMinute)
                         .labelsHidden()
+                        .accessibilityLabel("Working hours end time")
                 }
             }
+            .padding(16)
 
-            Divider()
+            Rectangle()
+                .fill(.secondary.opacity(0.2))
+                .frame(height: 1)
 
             if showResults {
                 ScrollView {
@@ -74,8 +94,10 @@ struct MeetingPlannerSheet: View {
                             slotRow(slot)
                         }
                     }
+                    .padding(16)
                 }
                 .frame(maxHeight: 200)
+                .scrollContentBackground(.hidden)
             }
 
             HStack {
@@ -86,10 +108,14 @@ struct MeetingPlannerSheet: View {
                 Button("Find Slots") {
                     calculateSlots()
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(.capsule)
+                .accessibilityLabel("Find meeting slots")
+                .accessibilityHint("Calculates optimal meeting times across all selected timezones")
             }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
         }
-        .padding()
         .frame(width: 500, height: 500)
     }
 
@@ -106,37 +132,34 @@ struct MeetingPlannerSheet: View {
                 if slot.isValid {
                     Text("All within working hours")
                         .font(.caption2)
-                        .foregroundColor(.green)
+                        .foregroundStyle(.green)
                 } else {
                     ForEach(slot.conflicts, id: \.cityId) { conflict in
                         Text(conflict.reason)
                             .font(.caption2)
-                            .foregroundColor(.orange)
+                            .foregroundStyle(.orange)
                     }
                 }
             }
             Spacer()
         }
-        .padding(8)
+        .padding(12)
         .background(slot.isValid ? Color.green.opacity(0.1) : Color.orange.opacity(0.1))
-        .cornerRadius(6)
+        .clipShape(.rect(cornerRadius: 12, style: .continuous))
     }
 
     private func calculateSlots() {
         let participants = cityStore.cities.filter { selectedCities.contains($0.id.uuidString) }
         let calendar = Calendar.current
-        var startComponents = calendar.dateComponents([.year, .month, .day], from: workingHoursStart)
-        startComponents.hour = 9
-        startComponents.minute = 0
-        let startDate = calendar.date(from: startComponents) ?? Date()
+        let startComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: workingHoursStart)
+        let endComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: workingHoursEnd)
 
-        var endComponents = calendar.dateComponents([.year, .month, .day], from: workingHoursEnd)
-        endComponents.hour = 18
-        endComponents.minute = 0
-
-        var hours = WorkingHours.default
-        hours.startHour = 9
-        hours.endHour = 18
+        let hours = WorkingHours(
+            startHour: startComponents.hour ?? 9,
+            startMinute: startComponents.minute ?? 0,
+            endHour: endComponents.hour ?? 18,
+            endMinute: endComponents.minute ?? 0
+        )
 
         slots = plannerService.calculateSlots(
             duration: duration,

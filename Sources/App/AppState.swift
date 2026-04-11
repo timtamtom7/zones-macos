@@ -10,6 +10,7 @@ class AppState: ObservableObject {
     @Published var showSettings = false
     @Published var use24HourFormat = false
     @Published var currentTime = Date()
+    @Published var lastError: Error?
 
     private var timer: Timer?
     private let cityStore = CityStore.shared
@@ -29,9 +30,15 @@ class AppState: ObservableObject {
     }
 
     func loadCities() {
-        cities = cityStore.getAllCities()
-        if cities.isEmpty {
-            setupDefaultCities()
+        do {
+            cities = try cityStore.getAllCities()
+            if cities.isEmpty {
+                setupDefaultCities()
+            }
+            lastError = nil
+        } catch {
+            lastError = error
+            cities = []
         }
     }
 
@@ -51,7 +58,7 @@ class AppState: ObservableObject {
             isLocal: true,
             isFavorite: false
         )
-        cityStore.saveCity(localCity)
+        try? cityStore.saveCity(localCity)
 
         for (index, (name, country, tz)) in defaults.enumerated() {
             let city = City(
@@ -63,7 +70,7 @@ class AppState: ObservableObject {
                 isLocal: false,
                 isFavorite: false
             )
-            cityStore.saveCity(city)
+            try? cityStore.saveCity(city)
         }
 
         loadCities()
@@ -79,13 +86,21 @@ class AppState: ObservableObject {
             isLocal: false,
             isFavorite: false
         )
-        cityStore.saveCity(city)
-        loadCities()
+        do {
+            try cityStore.saveCity(city)
+            loadCities()
+        } catch {
+            lastError = error
+        }
     }
 
     func removeCity(_ city: City) {
-        cityStore.deleteCity(city.id)
-        loadCities()
+        do {
+            try cityStore.deleteCity(city.id)
+            loadCities()
+        } catch {
+            lastError = error
+        }
     }
 
     func moveCity(from source: IndexSet, to destination: Int) {
@@ -93,9 +108,18 @@ class AppState: ObservableObject {
         reorderedCities.move(fromOffsets: source, toOffset: destination)
         for (index, var city) in reorderedCities.enumerated() {
             city.sortOrder = index
-            cityStore.updateCity(city)
+            try? cityStore.updateCity(city)
         }
         loadCities()
+    }
+
+    func updateCity(_ city: City) {
+        do {
+            try cityStore.updateCity(city)
+            loadCities()
+        } catch {
+            lastError = error
+        }
     }
 
     func refreshTimes() {
@@ -105,7 +129,7 @@ class AppState: ObservableObject {
     private func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             Task { @MainActor in
-                self?.currentTime = Date()
+                self?.refreshTimes()
             }
         }
     }

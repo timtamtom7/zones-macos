@@ -1,61 +1,80 @@
 import SwiftUI
 
 struct ZoneRowView: View {
-    let city: City
     @EnvironmentObject var appState: AppState
+
+    let city: City
 
     private let timeFormatter = TimeFormatterService.shared
 
     var body: some View {
         HStack(spacing: 12) {
-            // Time
             Text(timeString)
-                .font(.system(size: 24, weight: .medium, design: .monospaced))
+                .font(.system(size: 24, weight: .semibold, design: .monospaced))
+                .foregroundStyle(city.displayColor ?? .primary)
                 .frame(width: 120, alignment: .leading)
 
-            // City info
-            VStack(alignment: .leading, spacing: 2) {
-                HStack(spacing: 4) {
+            VStack(alignment: .leading, spacing: 4) {
+                HStack(spacing: 6) {
                     if city.isLocal {
                         Circle()
-                            .fill(Color.accentColor)
-                            .frame(width: 6, height: 6)
+                            .fill(.tint)
+                            .frame(width: 8, height: 8)
                     }
 
-                    Text(city.isLocal ? "Local Time" : city.name)
-                        .fontWeight(city.isLocal ? .semibold : .regular)
+                    if let color = city.displayColor {
+                        Circle()
+                            .fill(color)
+                            .frame(width: 8, height: 8)
+                    }
+
+                    Text(city.isLocal ? "Local Time" : city.displayName)
+                        .fontWeight(city.isLocal ? .semibold : .medium)
                 }
 
-                HStack(spacing: 4) {
+                HStack(spacing: 6) {
                     Text(city.flagEmoji)
                         .font(.caption)
 
                     if !city.isLocal {
                         Text(city.country)
                             .font(.caption)
-                            .foregroundColor(.secondary)
+                            .foregroundStyle(.secondary)
                     }
 
                     Text("·")
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
 
                     Text(city.timezoneAbbreviation)
                         .font(.caption)
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
                 }
             }
 
             Spacer()
 
-            // Date
             Text(dateString)
                 .font(.caption)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
+            
+            if let dst = dstIndicator {
+                Text(dst)
+                    .font(.caption2)
+                    .fontWeight(.medium)
+                    .padding(.horizontal, 4)
+                    .padding(.vertical, 2)
+                    .background(Color.blue.opacity(0.2))
+                    .foregroundStyle(.blue)
+                    .clipShape(Capsule())
+            }
         }
         .padding(.vertical, 8)
-        .padding(.horizontal, 12)
-        .background(city.isLocal ? Color.accentColor.opacity(0.05) : Color.clear)
+        .padding(.horizontal, 16)
+        .background(city.isLocal ? Color.accentColor.opacity(0.08) : Color.clear)
+        .clipShape(.rect(cornerRadius: 12, style: .continuous))
         .contentShape(Rectangle())
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(accessibilityDescription)
     }
 
     private var timeString: String {
@@ -67,5 +86,21 @@ struct ZoneRowView: View {
         formatter.dateFormat = "EEE, MMM d"
         formatter.timeZone = city.timezone ?? .current
         return formatter.string(from: appState.currentTime)
+    }
+    
+    private var dstIndicator: String? {
+        guard let tz = city.timezone else { return nil }
+        return tz.isDaylightSavingTime(for: appState.currentTime) ? "DST" : nil
+    }
+
+    private var accessibilityDescription: String {
+        var parts: [String] = []
+        parts.append(city.isLocal ? "Local time" : city.displayName)
+        parts.append(timeString)
+        if let dst = dstIndicator {
+            parts.append(dst)
+        }
+        parts.append("on \(dateString)")
+        return parts.joined(separator: ", ")
     }
 }

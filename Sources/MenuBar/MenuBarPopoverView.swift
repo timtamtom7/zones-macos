@@ -5,39 +5,38 @@ struct MenuBarPopoverView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            // Header
             HStack {
                 Image(systemName: "globe")
-                    .foregroundColor(.accentColor)
+                    .foregroundStyle(.tint)
 
                 Text("ZONES")
                     .font(.headline)
+                    .fontWeight(.semibold)
 
                 Spacer()
 
                 Button(action: { appState.showSettings = true }) {
-                    Image(systemName: "gear")
+                    Image(systemName: "gearshape.fill")
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Settings")
+                .accessibilityHint("Opens the settings sheet")
             }
-            .padding()
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
+            .clipShape(.rect(cornerRadius: 12, style: .continuous))
 
-            Divider()
-
-            // Search hint
             HStack {
                 Image(systemName: "magnifyingglass")
-                    .foregroundColor(.secondary)
-                Text("Search cities in the app")
+                    .foregroundStyle(.secondary)
+                Text("Search cities")
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
             }
-            .padding(.horizontal)
+            .padding(.horizontal, 16)
             .padding(.vertical, 8)
 
-            Divider()
-
-            // Zone list
             ScrollView {
                 VStack(spacing: 0) {
                     ForEach(appState.cities) { city in
@@ -46,16 +45,16 @@ struct MenuBarPopoverView: View {
                 }
             }
             .frame(maxHeight: 300)
+            .scrollContentBackground(.hidden)
 
-            Divider()
-
-            // Footer
             HStack {
                 Button(action: { appState.showAddCitySheet = true }) {
                     Label("Add City", systemImage: "plus")
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(.capsule)
                 .controlSize(.small)
+                .accessibilityLabel("Add City")
+                .accessibilityHint("Opens the add city sheet to add a new timezone city")
 
                 Spacer()
 
@@ -64,14 +63,21 @@ struct MenuBarPopoverView: View {
                 }
                 .buttonStyle(.plain)
                 .font(.caption)
+                .accessibilityLabel("Open ZONES")
+                .accessibilityHint("Opens the main ZONES application window")
 
                 Button("Quit") {
                     NSApp.terminate(nil)
                 }
                 .buttonStyle(.plain)
                 .font(.caption)
+                .accessibilityLabel("Quit ZONES")
+                .accessibilityHint("Closes the ZONES application")
             }
-            .padding()
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
+            .clipShape(.rect(cornerRadius: 12, style: .continuous))
         }
         .frame(width: 320)
     }
@@ -88,23 +94,23 @@ struct MenuBarZoneRow: View {
         HStack(spacing: 12) {
             if city.isLocal {
                 Circle()
-                    .fill(Color.accentColor)
-                    .frame(width: 6, height: 6)
+                    .fill(.tint)
+                    .frame(width: 8, height: 8)
             }
 
             Text(city.isLocal ? "Local" : city.name)
-                .font(.system(size: 13))
-                .fontWeight(city.isLocal ? .semibold : .regular)
+                .font(.system(size: 13, weight: .medium))
                 .lineLimit(1)
 
             Spacer()
 
             Text(timeFormatter.formatTimeShort(currentTime, timezone: city.timezone ?? .current, use24Hour: use24Hour))
                 .font(.system(size: 13, design: .monospaced))
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 6)
-        .background(city.isLocal ? Color.accentColor.opacity(0.05) : Color.clear)
+        .background(city.isLocal ? Color.accentColor.opacity(0.08) : Color.clear)
+        .clipShape(.rect(cornerRadius: 12, style: .continuous))
     }
 }

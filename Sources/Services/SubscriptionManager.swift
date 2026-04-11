@@ -3,6 +3,7 @@ import StoreKit
 
 /// R16: Subscription management for Zones
 @available(macOS 13.0, *)
+@MainActor
 public final class ZonesSubscriptionManager: ObservableObject {
     public static let shared = ZonesSubscriptionManager()
     @Published public private(set) var subscription: ZonesSubscription?

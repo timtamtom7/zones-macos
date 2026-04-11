@@ -60,34 +60,9 @@ final class WorldMapRenderer {
 
     func citiesToMapCities(_ cities: [City]) -> [MapCity] {
         cities.compactMap { city -> MapCity? in
-            guard let tz = city.timezone else { return nil }
-            let lat = latitudeForTimezone(tz.identifier)
-            let lon = longitudeForTimezone(tz.identifier)
-            let isDaytime = SunPositionService.shared.isDaytime(latitude: lat, longitude: lon, date: Date())
-            return MapCity(id: city.id.uuidString, name: city.name, coordinate: (lat, lon), isDaytime: isDaytime)
+            guard let coord = CoordinateService.shared.coordinateForCity(city) else { return nil }
+            let isDaytime = SunPositionService.shared.isDaytime(latitude: coord.lat, longitude: coord.lon, date: Date())
+            return MapCity(id: city.id.uuidString, name: city.name, coordinate: coord, isDaytime: isDaytime)
         }
-    }
-
-    private func latitudeForTimezone(_ identifier: String) -> Double {
-        coordinateForTimezone(identifier).0
-    }
-
-    private func longitudeForTimezone(_ identifier: String) -> Double {
-        coordinateForTimezone(identifier).1
-    }
-
-    private func coordinateForTimezone(_ identifier: String) -> (Double, Double) {
-        let coords: [String: (Double, Double)] = [
-            "America/Los_Angeles": (34.0, -118.0),
-            "America/New_York": (40.0, -74.0),
-            "Europe/London": (51.0, 0.0),
-            "Europe/Paris": (49.0, 2.0),
-            "Asia/Tokyo": (35.0, 139.0),
-            "Asia/Shanghai": (31.0, 121.0),
-            "Asia/Singapore": (1.0, 104.0),
-            "Australia/Sydney": (-33.0, 151.0),
-            "Pacific/Auckland": (-37.0, 175.0),
-        ]
-        return coords[identifier] ?? (0, 0)
     }
 }

@@ -12,42 +12,40 @@ struct WorldMapView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Toolbar
             HStack {
                 Text("World Map")
                     .font(.headline)
+                    .fontWeight(.semibold)
                 Spacer()
                 Button("Fit All") {
                     fitAllCities()
                 }
                 .buttonStyle(.plain)
-                .foregroundColor(.accentColor)
+                .accessibilityLabel("Fit all cities on map")
+                .accessibilityHint("Zooms and pans the map to show all your added cities")
             }
-            .padding()
-            .background(Color(NSColor.controlBackgroundColor))
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
 
-            // Map
             ZStack {
-                Map(coordinateRegion: $region, annotationItems: mapAnnotations) { annotation in
-                    MapAnnotation(coordinate: annotation.coordinate) {
-                        cityMarker(annotation)
+                Map {
+                    ForEach(mapAnnotations) { annotation in
+                        Annotation(annotation.name, coordinate: annotation.coordinate) {
+                            cityMarker(annotation)
+                        }
                     }
                 }
-                .allowsHitTesting(true)
-                .gesture(
-                    DragGesture()
-                        .onChanged { _ in }
-                )
 
-                // Day/night overlay
                 dayNightOverlay
             }
 
-            // City detail popover
             if let city = selectedCity {
                 cityDetailBar(city)
             }
         }
+        .clipShape(.rect(cornerRadius: 12, style: .continuous))
+        .shadow(color: .black.opacity(0.12), radius: 10, x: 0, y: 3)
         .onAppear {
             mapRenderer.updateCities(cities)
         }
@@ -55,7 +53,7 @@ struct WorldMapView: View {
 
     private var mapAnnotations: [MapCityAnnotation] {
         cities.compactMap { city -> MapCityAnnotation? in
-            guard let coord = coordinateForCity(city) else { return nil }
+            guard let coord = CoordinateService.shared.coordinateForCity(city) else { return nil }
             let isDaytime = SunPositionService.shared.isDaytime(latitude: coord.lat, longitude: coord.lon, date: Date())
             return MapCityAnnotation(
                 id: city.id.uuidString,
@@ -67,52 +65,27 @@ struct WorldMapView: View {
     }
 
     private func coordinateForCity(_ city: City) -> (lat: Double, lon: Double)? {
-        let coords: [String: (Double, Double)] = [
-            "America/Los_Angeles": (34.0, -118.0),
-            "America/New_York": (40.0, -74.0),
-            "Europe/London": (51.0, 0.0),
-            "Europe/Paris": (49.0, 2.0),
-            "Asia/Tokyo": (35.0, 139.0),
-            "Asia/Shanghai": (31.0, 121.0),
-            "Asia/Singapore": (1.0, 104.0),
-            "Australia/Sydney": (-33.0, 151.0),
-            "Pacific/Auckland": (-37.0, 175.0),
-            "America/Chicago": (41.0, -87.0),
-            "America/Denver": (39.0, -105.0),
-            "Asia/Dubai": (25.0, 55.0),
-            "Asia/Hong_Kong": (22.0, 114.0),
-            "Europe/Berlin": (52.0, 13.0),
-            "Europe/Moscow": (56.0, 37.0),
-            "Asia/Seoul": (37.0, 127.0),
-            "Asia/Kolkata": (19.0, 73.0),
-        ]
-        if let coord = coords[city.timezoneIdentifier] {
-            return coord
-        }
-        if let tz = city.timezone {
-            let offset = Double(tz.secondsFromGMT()) / 3600.0
-            return (20, offset * 15)
-        }
-        return nil
+        CoordinateService.shared.coordinateForCity(city)
     }
 
     @ViewBuilder
     private func cityMarker(_ annotation: MapCityAnnotation) -> some View {
-        VStack(spacing: 2) {
+        VStack(spacing: 4) {
             ZStack {
                 Circle()
                     .fill(annotation.isDaytime ? Color.yellow : Color.indigo)
-                    .frame(width: 16, height: 16)
+                    .frame(width: 18, height: 18)
                 Circle()
                     .stroke(Color.white, lineWidth: 2)
-                    .frame(width: 16, height: 16)
+                    .frame(width: 18, height: 18)
             }
             Text(annotation.name)
                 .font(.caption2)
-                .padding(.horizontal, 4)
-                .padding(.vertical, 2)
-                .background(Color(NSColor.windowBackgroundColor).opacity(0.8))
-                .cornerRadius(4)
+                .fontWeight(.medium)
+                .padding(.horizontal, 6)
+                .padding(.vertical, 3)
+                .background(.ultraThinMaterial)
+                .clipShape(.capsule)
         }
         .onTapGesture {
             if let city = cities.first(where: { $0.id.uuidString == annotation.id }) {
@@ -128,11 +101,10 @@ struct WorldMapView: View {
 
             let terminatorX = CGFloat(hour) / 24.0 * geometry.size.width
 
-            // Night side
             HStack(spacing: 0) {
                 if terminatorX > 0 {
                     Rectangle()
-                        .fill(Color.black.opacity(0.3))
+                        .fill(.black.opacity(0.25))
                         .frame(width: terminatorX)
                 }
                 Spacer()
@@ -145,14 +117,21 @@ struct WorldMapView: View {
     private func cityDetailBar(_ city: City) -> some View {
         HStack {
             if let tz = city.timezone {
-                Text(Self.formattedTime(for: tz)).font(.system(size: 24, weight: .medium, design: .monospaced))
+                Text(Self.formattedTime(for: tz))
+                    .font(.system(size: 24, weight: .semibold, design: .monospaced))
             }
             Spacer()
-            Text(city.name).font(.headline)
+            Text(city.name)
+                .font(.headline)
             if let abbrev = city.timezone?.abbreviation() {
-                Text(abbrev).font(.caption).foregroundColor(.secondary)
+                Text(abbrev)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
-        }.padding().background(Color(NSColor.controlBackgroundColor))
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(.regularMaterial)
     }
     
     private static func formattedTime(for tz: TimeZone) -> String {
@@ -186,6 +165,7 @@ struct MapCityAnnotation: Identifiable {
     let isDaytime: Bool
 }
 
+@MainActor
 final class WorldMapViewModel: ObservableObject {
     @Published var cities: [City] = []
 

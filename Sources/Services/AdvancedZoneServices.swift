@@ -16,8 +16,24 @@ final class WorldClockService {
     }
     
     func getAnalogClock(for cityId: UUID) -> AnalogClock? {
-        // Return current time as analog clock data
-        nil
+        guard let city = CityStore.shared.cities.first(where: { $0.id == cityId }),
+              let tz = city.timezone else { return nil }
+        
+        let now = Date()
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = tz
+        
+        let hour = calendar.component(.hour, from: now)
+        let minute = calendar.component(.minute, from: now)
+        let second = calendar.component(.second, from: now)
+        
+        return AnalogClock(
+            cityId: cityId,
+            hour: hour,
+            minute: minute,
+            second: second,
+            timezone: city.timezoneIdentifier
+        )
     }
 }
 

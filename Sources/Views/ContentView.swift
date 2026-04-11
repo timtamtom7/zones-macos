@@ -6,46 +6,49 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Header
-            HStack {
-                Image(systemName: "globe")
-                    .foregroundColor(.accentColor)
+            LiquidGlassHeader {
+                HStack {
+                    Image(systemName: "globe")
+                        .foregroundStyle(.tint)
 
-                Text("ZONES")
-                    .font(.title2)
-                    .fontWeight(.bold)
+                    Text("ZONES")
+                        .font(.title3)
+                        .fontWeight(.bold)
 
-                Spacer()
+                    Spacer()
 
-                Button(action: { appState.showSettings = true }) {
-                    Image(systemName: "gear")
+                    Button(action: { appState.showSettings = true }) {
+                        Image(systemName: "gearshape.fill")
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Settings")
+                    .accessibilityHint("Opens the settings sheet")
                 }
-                .buttonStyle(.plain)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
             }
-            .padding()
 
-            Divider()
-
-            // Zone list
             ZoneListView()
                 .environmentObject(appState)
 
-            Divider()
+            LiquidGlassFooter {
+                HStack {
+                    Button(action: { appState.showAddCitySheet = true }) {
+                        Label("Add City", systemImage: "plus")
+                    }
+                    .buttonStyle(.capsule)
+                    .accessibilityLabel("Add City")
+                    .accessibilityHint("Opens the add city sheet to search and add a new timezone city")
 
-            // Footer
-            HStack {
-                Button(action: { appState.showAddCitySheet = true }) {
-                    Label("Add City", systemImage: "plus")
+                    Spacer()
+
+                    Text("\(appState.cities.count) cities")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
                 }
-                .buttonStyle(.borderedProminent)
-
-                Spacer()
-
-                Text("\(appState.cities.count) cities")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
             }
-            .padding()
         }
         .frame(minWidth: 400, minHeight: 500)
         .sheet(isPresented: $appState.showAddCitySheet) {
@@ -56,6 +59,42 @@ struct ContentView: View {
             SettingsSheet()
                 .environmentObject(appState)
         }
+    }
+}
+
+struct LiquidGlassHeader<Content: View>: View {
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        content()
+            .frame(maxWidth: .infinity)
+            .background(.regularMaterial)
+            .clipShape(.rect(cornerRadius: 12, style: .continuous))
+            .shadow(color: .black.opacity(0.12), radius: 10, x: 0, y: 3)
+    }
+}
+
+struct LiquidGlassFooter<Content: View>: View {
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        content()
+            .frame(maxWidth: .infinity)
+            .background(.regularMaterial)
+            .clipShape(.rect(cornerRadius: 12, style: .continuous))
+            .shadow(color: .black.opacity(0.12), radius: 10, x: 0, y: -3)
+    }
+}
+
+struct LiquidGlassCard<Content: View>: View {
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        content()
+            .padding(16)
+            .background(.regularMaterial)
+            .clipShape(.rect(cornerRadius: 12, style: .continuous))
+            .shadow(color: .black.opacity(0.12), radius: 10, x: 0, y: 3)
     }
 }
 
@@ -78,6 +117,7 @@ struct SettingsSheet: View {
                 Button("Done") {
                     dismiss()
                 }
+                .buttonStyle(.capsule)
                 .keyboardShortcut(.defaultAction)
             }
             .padding()

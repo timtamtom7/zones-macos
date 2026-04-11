@@ -1,6 +1,14 @@
 import Foundation
 
 final class MeetingPlannerService: ObservableObject {
+    enum SlotFilter {
+        case all
+        case perfectOnly
+        case noMajorConflicts
+    }
+    
+    var slotFilter: SlotFilter = .noMajorConflicts
+    
     func calculateSlots(
         duration: TimeInterval,
         participants: [City],
@@ -9,8 +17,7 @@ final class MeetingPlannerService: ObservableObject {
     ) -> [MeetingSlot] {
         var slots: [MeetingSlot] = []
 
-        // Iterate through the day in 30-minute increments
-        let calendar = Calendar.current
+        let calendar = Calendar(identifier: .gregorian)
         var currentTime = calendar.startOfDay(for: onDate)
         let endOfDay = calendar.date(byAdding: .day, value: 1, to: currentTime)!
 
@@ -20,7 +27,18 @@ final class MeetingPlannerService: ObservableObject {
             currentTime = calendar.date(byAdding: .minute, value: 30, to: currentTime)!
         }
 
-        return slots.filter { !$0.conflicts.isEmpty || true } // Keep all slots
+        switch slotFilter {
+        case .all:
+            return slots
+        case .perfectOnly:
+            return slots.filter { $0.conflicts.isEmpty }
+        case .noMajorConflicts:
+            return slots.filter { slot in
+                slot.conflicts.allSatisfy { conflict in
+                    !conflict.reason.contains("before working hours") && !conflict.reason.contains("past working hours")
+                }
+            }
+        }
     }
 
     private func evaluateSlot(
@@ -34,7 +52,7 @@ final class MeetingPlannerService: ObservableObject {
         for city in participants {
             guard let tz = city.timezone else { continue }
 
-            var calendar = Calendar.current
+            var calendar = Calendar(identifier: .gregorian)
             calendar.timeZone = tz
 
             let components = calendar.dateComponents([.hour, .minute], from: startTime)

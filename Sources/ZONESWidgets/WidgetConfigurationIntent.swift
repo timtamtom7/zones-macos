@@ -16,11 +16,16 @@ struct WidgetConfigurationEntity: AppEntity {
 
 struct WidgetZoneQuery: EntityQuery {
     func entities(for identifiers: [UUID]) async throws -> [WidgetConfigurationEntity] {
-        return []
+        let cities = CityStore.shared.cities
+        return cities
+            .filter { identifiers.contains($0.id) }
+            .map { WidgetConfigurationEntity(id: $0.id, cityName: $0.name, timezoneIdentifier: $0.timezoneIdentifier) }
     }
     
     func suggestedEntities() async throws -> [WidgetConfigurationEntity] {
-        return []
+        return CityStore.shared.cities.prefix(10).map {
+            WidgetConfigurationEntity(id: $0.id, cityName: $0.name, timezoneIdentifier: $0.timezoneIdentifier)
+        }
     }
 }
 

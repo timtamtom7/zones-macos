@@ -1,6 +1,7 @@
 import Foundation
 import CloudKit
 
+@MainActor
 class iCloudSyncService: ObservableObject {
     static let shared = iCloudSyncService()
     
@@ -135,7 +136,9 @@ class iCloudSyncService: ObservableObject {
                 ]
                 try await syncSettings(settings)
             } catch {
-                print("Sync error: \(error)")
+                await MainActor.run {
+                    syncStatus = .error(error.localizedDescription)
+                }
             }
         }
     }

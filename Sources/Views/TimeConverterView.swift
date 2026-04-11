@@ -7,57 +7,68 @@ struct TimeConverterView: View {
     @State private var selectedDate = Date()
 
     var body: some View {
-        VStack(spacing: 16) {
-            Text("Time Converter")
-                .font(.headline)
-
-            // Source city picker
-            Picker("From", selection: $selectedCity) {
-                Text("Select city").tag(nil as City?)
-                ForEach(cities) { city in
-                    Text(city.name).tag(city as City?)
-                }
+        VStack(spacing: 0) {
+            HStack {
+                Text("Time Converter")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                Spacer()
             }
-            .labelsHidden()
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
 
-            // Date/time picker
-            DatePicker("", selection: $selectedDate)
+            VStack(spacing: 16) {
+                Picker("From", selection: $selectedCity) {
+                    Text("Select city").tag(nil as City?)
+                    ForEach(cities) { city in
+                        Text(city.name).tag(city as City?)
+                    }
+                }
                 .labelsHidden()
 
-            Divider()
+                DatePicker("", selection: $selectedDate)
+                    .labelsHidden()
 
-            // Conversion results
-            if let source = selectedCity {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("In other zones:")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
+                Rectangle()
+                    .fill(.secondary.opacity(0.2))
+                    .frame(height: 1)
 
-                    ForEach(converterService.convert(time: selectedDate, in: source.timezone!, to: cities)) { result in
-                        if result.city.id != source.id {
-                            HStack {
-                                Text(result.city.name)
-                                    .font(.caption)
-                                Spacer()
-                                Text(result.formattedTime)
-                                    .font(.system(size: 13, weight: .medium, design: .monospaced))
-                                if result.isNextDay {
-                                    Text("+1 day")
-                                        .font(.caption2)
-                                        .foregroundColor(.orange)
+                if let source = selectedCity, let sourceTz = source.timezone {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("In other zones:")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+
+                        ForEach(converterService.convert(time: selectedDate, in: sourceTz, to: cities)) { result in
+                            if result.city.id != source.id {
+                                HStack {
+                                    Text(result.city.name)
+                                        .font(.caption)
+                                    Spacer()
+                                    Text(result.formattedTime)
+                                        .font(.system(size: 13, weight: .medium, design: .monospaced))
+                                    if result.isNextDay {
+                                        Text("+1 day")
+                                            .font(.caption2)
+                                            .foregroundStyle(.orange)
+                                    }
                                 }
                             }
                         }
                     }
+                } else {
+                    Text("Select a city to convert from")
+                        .foregroundStyle(.secondary)
                 }
-            } else {
-                Text("Select a city to convert from")
-                    .foregroundColor(.secondary)
-            }
 
-            Spacer()
+                Spacer()
+            }
+            .padding(16)
         }
-        .padding()
+        .background(.regularMaterial)
+        .clipShape(.rect(cornerRadius: 12, style: .continuous))
+        .shadow(color: .black.opacity(0.12), radius: 10, x: 0, y: 3)
         .frame(width: 300, height: 350)
     }
 }

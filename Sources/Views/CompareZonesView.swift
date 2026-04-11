@@ -9,48 +9,63 @@ struct CompareZonesView: View {
     private let workingHoursService = WorkingHoursService.shared
 
     var body: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 0) {
             HStack {
                 Text("Compare Zones")
                     .font(.headline)
+                    .fontWeight(.semibold)
                 Spacer()
                 Button("Add Zone") {
                     showCityPicker = true
                 }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Add zone to compare")
+                .accessibilityHint("Opens a picker to add up to 4 zones for side-by-side comparison")
             }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 0) {
                     ForEach(compareCities) { city in
                         zoneColumn(city)
                         if city.id != compareCities.last?.id {
-                            Divider()
+                            Rectangle()
+                                .fill(.secondary.opacity(0.2))
+                                .frame(width: 1)
+                                .padding(.vertical, 16)
                         }
                     }
 
                     if compareCities.isEmpty {
                         Text("Add zones to compare")
-                            .foregroundColor(.secondary)
-                            .padding()
+                            .foregroundStyle(.secondary)
+                            .padding(32)
                     }
                 }
             }
+            .padding(.vertical, 16)
 
-            Divider()
+            Rectangle()
+                .fill(.secondary.opacity(0.2))
+                .frame(height: 1)
 
-            // Time differences
             if compareCities.count >= 2 {
                 VStack(alignment: .leading, spacing: 4) {
                     ForEach(0..<compareCities.count-1, id: \.self) { i in
                         let diff = timeDifference(from: compareCities[i], to: compareCities[i+1])
                         Text(diff)
                             .font(.caption)
-                            .foregroundColor(.secondary)
+                            .foregroundStyle(.secondary)
                     }
                 }
+                .padding(16)
             }
         }
-        .padding()
+        .background(.regularMaterial)
+        .clipShape(.rect(cornerRadius: 12, style: .continuous))
+        .shadow(color: .black.opacity(0.12), radius: 10, x: 0, y: 3)
         .sheet(isPresented: $showCityPicker) {
             CityPickerSheet(selectedCities: $compareCities, isPresented: $showCityPicker)
         }
@@ -64,49 +79,44 @@ struct CompareZonesView: View {
     @ViewBuilder
     private func zoneColumn(_ city: City) -> some View {
         VStack(spacing: 8) {
-            // City name
             Text(city.name)
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
 
-            // Current time
             if let tz = city.timezone {
                 let timeString = currentTimeString(for: tz)
                 Text(timeString)
                     .font(.system(size: 28, weight: .light, design: .monospaced))
             }
 
-            // Date
             if let tz = city.timezone {
                 let dateString = currentDateString(for: tz)
                 Text(dateString)
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
             }
 
-            // Timezone abbreviation
             Text(city.timezoneAbbreviation)
                 .font(.caption2)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
                 .padding(.horizontal, 8)
-                .padding(.vertical, 2)
-                .background(Color(NSColor.controlBackgroundColor))
-                .cornerRadius(4)
+                .padding(.vertical, 4)
+                .background(.ultraThinMaterial)
+                .clipShape(.rect(cornerRadius: 12, style: .continuous))
 
-            // Working hours bar
             if let tz = city.timezone {
                 WorkingHoursBarView(timeZone: tz)
             }
 
-            // Remove button
             Button(action: { compareCities.removeAll { $0.id == city.id } }) {
                 Image(systemName: "xmark.circle.fill")
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
             }
             .buttonStyle(.plain)
+            .accessibilityLabel("Remove \(city.name) from comparison")
         }
         .frame(minWidth: 120)
-        .padding(.horizontal, 8)
+        .padding(.horizontal, 12)
     }
 
     private func currentTimeString(for timezone: TimeZone) -> String {
@@ -127,8 +137,8 @@ struct CompareZonesView: View {
         guard let sourceTz = source.timezone, let targetTz = target.timezone else { return "" }
         let diff = targetTz.secondsFromGMT() - sourceTz.secondsFromGMT()
         let hours = diff / 3600
-        let sign = hours >= 0 ? "+" : ""
-        return "\(source.name) is \(abs(hours))h \(sign)\(abs(hours)) from \(target.name)"
+        let sign = hours >= 0 ? "ahead" : "behind"
+        return "\(source.name) is \(abs(hours))h \(sign) \(target.name)"
     }
 }
 
@@ -141,16 +151,16 @@ struct WorkingHoursBarView: View {
 
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: 2)
+                RoundedRectangle(cornerRadius: 12)
                     .fill(Color.gray.opacity(0.3))
 
-                RoundedRectangle(cornerRadius: 2)
+                RoundedRectangle(cornerRadius: 12)
                     .fill(color)
                     .frame(width: barWidth(in: geometry.size.width))
             }
         }
-        .frame(height: 6)
-        .padding(.horizontal, 4)
+        .frame(height: 8)
+        .padding(.horizontal, 8)
     }
 
     private func barWidth(in totalWidth: CGFloat) -> CGFloat {
@@ -169,16 +179,28 @@ struct CityPickerSheet: View {
     @StateObject private var cityStore = CityStore.shared
 
     var body: some View {
-        VStack {
-            Text("Select Cities")
-                .font(.headline)
+        VStack(spacing: 0) {
+            HStack {
+                Text("Select Cities")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                Spacer()
+                Button("Done") {
+                    isPresented = false
+                }
+                .buttonStyle(.capsule)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
+
             List(cityStore.cities) { city in
                 HStack {
                     Text(city.name)
                     Spacer()
                     if selectedCities.contains(where: { $0.id == city.id }) {
                         Image(systemName: "checkmark")
-                            .foregroundColor(.accentColor)
+                            .foregroundStyle(.tint)
                     }
                 }
                 .contentShape(Rectangle())
@@ -190,10 +212,8 @@ struct CityPickerSheet: View {
                     }
                 }
             }
-            Button("Done") {
-                isPresented = false
-            }
-            .padding()
+            .listStyle(.plain)
+            .scrollContentBackground(.hidden)
         }
         .frame(width: 300, height: 400)
     }

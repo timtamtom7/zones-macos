@@ -8,47 +8,50 @@ struct AddCitySheet: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Header
             HStack {
                 Text("Add City")
                     .font(.headline)
+                    .fontWeight(.semibold)
 
                 Spacer()
 
                 Button(action: { dismiss() }) {
                     Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
                 }
                 .buttonStyle(.plain)
             }
-            .padding()
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(.regularMaterial)
+            .clipShape(.rect(cornerRadius: 12, style: .continuous))
 
-            // Search
             HStack {
                 Image(systemName: "magnifyingglass")
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
 
-                TextField("Search cities...", text: $searchText)
+                TextField("Search cities", text: $searchText)
                     .textFieldStyle(.plain)
                     .autocorrectionDisabled()
             }
-            .padding(8)
-            .background(Color(NSColor.controlBackgroundColor))
-            .clipShape(RoundedRectangle(cornerRadius: 8))
-            .padding(.horizontal)
-            .padding(.bottom, 8)
+            .padding(10)
+            .background(.ultraThinMaterial)
+            .clipShape(.rect(cornerRadius: 12, style: .continuous))
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
 
-            Divider()
-
-            // Results
-            List(searchVM.filteredCities) { city in
-                CityRowView(city: city)
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        addCity(city)
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(searchVM.filteredCities) { city in
+                        CityRowView(city: city)
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                addCity(city)
+                            }
                     }
+                }
             }
-            .listStyle(.plain)
+            .scrollContentBackground(.hidden)
         }
         .frame(width: 400, height: 500)
         .onChange(of: searchText) { newValue in
@@ -79,16 +82,19 @@ struct CityRowView: View {
 
                 Text(city.country)
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
             }
 
             Spacer()
 
             Text(city.timezone.split(separator: "/").last.map(String.init) ?? city.timezone)
                 .font(.caption)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
         }
-        .padding(.vertical, 6)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
         .contentShape(Rectangle())
+        .accessibilityLabel("\(city.name), \(city.country), \(city.timezone)")
+        .accessibilityHint("Double tap to add this city to your zones")
     }
 }

@@ -54,3 +54,15 @@ targets:
         com.apple.developer.icloud-services:
           - CloudKit
         com.apple.security.personal-information.location: true
+
+  ZONESTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: ZONES
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zones.app.tests
+        PRODUCT_NAME: ZONESTests

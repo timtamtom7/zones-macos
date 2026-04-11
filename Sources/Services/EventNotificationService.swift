@@ -11,6 +11,14 @@ final class EventNotificationService: NSObject, ObservableObject {
         loadEvents()
     }
 
+    func requestAuthorization() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if let error = error {
+                print("Notification authorization error: \(error.localizedDescription)")
+            }
+        }
+    }
+
     func addEvent(_ event: EventNotification) {
         events.append(event)
         saveEvents()
@@ -69,5 +77,33 @@ final class EventNotificationService: NSObject, ObservableObject {
         if let data = try? JSONEncoder().encode(events) {
             UserDefaults.standard.set(data, forKey: "eventNotifications")
         }
+    }
+}
+
+// MARK: - UNUserNotificationCenterDelegate
+
+extension EventNotificationService: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        completionHandler([.banner, .sound])
+    }
+
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        let userInfo = response.notification.request.content.userInfo
+        if let cityId = userInfo["cityId"] as? String {
+            NotificationCenter.default.post(
+                name: Notification.Name("notificationCityTapped"),
+                object: nil,
+                userInfo: ["cityId": cityId]
+            )
+        }
+        completionHandler()
     }
 }
