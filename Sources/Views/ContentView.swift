@@ -36,7 +36,7 @@ struct ContentView: View {
                     Button(action: { appState.showAddCitySheet = true }) {
                         Label("Add City", systemImage: "plus")
                     }
-                    .buttonStyle(.capsule)
+                    .buttonStyle(.bordered)
                     .accessibilityLabel("Add City")
                     .accessibilityHint("Opens the add city sheet to search and add a new timezone city")
 
@@ -117,7 +117,7 @@ struct SettingsSheet: View {
                 Button("Done") {
                     dismiss()
                 }
-                .buttonStyle(.capsule)
+                .buttonStyle(.bordered)
                 .keyboardShortcut(.defaultAction)
             }
             .padding()

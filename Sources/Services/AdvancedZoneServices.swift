@@ -2,6 +2,7 @@ import Foundation
 
 // MARK: - World Clock Service (R6)
 
+@MainActor
 final class WorldClockService {
     static let shared = WorldClockService()
     

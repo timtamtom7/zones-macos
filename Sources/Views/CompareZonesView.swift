@@ -188,7 +188,7 @@ struct CityPickerSheet: View {
                 Button("Done") {
                     isPresented = false
                 }
-                .buttonStyle(.capsule)
+                .buttonStyle(.bordered)
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 12)

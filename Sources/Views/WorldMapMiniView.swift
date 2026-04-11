@@ -12,23 +12,39 @@ struct WorldMapMiniView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                Map {
-                    ForEach(cityAnnotations) { annotation in
-                        Annotation(annotation.name, coordinate: annotation.coordinate) {
-                            Circle()
-                                .fill(annotation.color)
-                                .frame(width: 10, height: 10)
-                                .overlay(
-                                    Circle()
-                                        .stroke(Color.white, lineWidth: 1)
-                                )
-                        }
-                    }
+                if #available(macOS 14.0, *) {
+                    macOS14Map
+                } else {
+                    macOS13Map
                 }
-                .allowsHitTesting(false)
             }
         }
         .clipShape(.rect(cornerRadius: 12, style: .continuous))
+    }
+
+    @available(macOS 14.0, *)
+    private var macOS14Map: some View {
+        Map {
+            ForEach(cityAnnotations) { annotation in
+                Annotation(annotation.name, coordinate: annotation.coordinate) {
+                    Circle()
+                        .fill(annotation.color)
+                        .frame(width: 10, height: 10)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.white, lineWidth: 1)
+                        )
+                }
+            }
+        }
+        .allowsHitTesting(false)
+    }
+
+    private var macOS13Map: some View {
+        Map(coordinateRegion: $region, annotationItems: cityAnnotations) { annotation in
+            MapMarker(coordinate: annotation.coordinate, tint: annotation.color)
+        }
+        .allowsHitTesting(false)
     }
 
     private var cityAnnotations: [CityAnnotation] {

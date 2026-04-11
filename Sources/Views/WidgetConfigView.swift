@@ -51,7 +51,7 @@ struct WidgetConfigView: View {
                 Button("Save") {
                     saveWidgetConfig()
                 }
-                .buttonStyle(.capsule)
+                .buttonStyle(.bordered)
                 .accessibilityLabel("Save widget configuration")
                 .accessibilityHint("Saves the current widget settings and refreshes the widget")
             }
@@ -107,7 +107,7 @@ struct ICloudSyncSettingsView: View {
                 Button("Sync Now") {
                     iCloudSyncService.shared.syncAll()
                 }
-                .buttonStyle(.capsule)
+                .buttonStyle(.bordered)
                 .disabled(syncStatus == .syncing)
                 .accessibilityLabel("Sync now")
                 .accessibilityHint("Manually triggers an immediate sync of your zones data to iCloud")

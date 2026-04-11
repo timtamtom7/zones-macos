@@ -29,12 +29,10 @@ struct WorldMapView: View {
             .background(.regularMaterial)
 
             ZStack {
-                Map {
-                    ForEach(mapAnnotations) { annotation in
-                        Annotation(annotation.name, coordinate: annotation.coordinate) {
-                            cityMarker(annotation)
-                        }
-                    }
+                if #available(macOS 14.0, *) {
+                    macOS14Map
+                } else {
+                    macOS13Map
                 }
 
                 dayNightOverlay
@@ -48,6 +46,23 @@ struct WorldMapView: View {
         .shadow(color: .black.opacity(0.12), radius: 10, x: 0, y: 3)
         .onAppear {
             mapRenderer.updateCities(cities)
+        }
+    }
+
+    @available(macOS 14.0, *)
+    private var macOS14Map: some View {
+        Map {
+            ForEach(mapAnnotations) { annotation in
+                Annotation(annotation.name, coordinate: annotation.coordinate) {
+                    cityMarker(annotation)
+                }
+            }
+        }
+    }
+
+    private var macOS13Map: some View {
+        Map(coordinateRegion: $region, annotationItems: mapAnnotations) { annotation in
+            MapMarker(coordinate: annotation.coordinate, tint: annotation.isDaytime ? .yellow : .indigo)
         }
     }
 

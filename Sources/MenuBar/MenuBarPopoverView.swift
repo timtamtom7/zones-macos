@@ -51,7 +51,7 @@ struct MenuBarPopoverView: View {
                 Button(action: { appState.showAddCitySheet = true }) {
                     Label("Add City", systemImage: "plus")
                 }
-                .buttonStyle(.capsule)
+                .buttonStyle(.bordered)
                 .controlSize(.small)
                 .accessibilityLabel("Add City")
                 .accessibilityHint("Opens the add city sheet to add a new timezone city")

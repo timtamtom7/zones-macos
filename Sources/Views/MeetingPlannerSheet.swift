@@ -108,7 +108,7 @@ struct MeetingPlannerSheet: View {
                 Button("Find Slots") {
                     calculateSlots()
                 }
-                .buttonStyle(.capsule)
+                .buttonStyle(.bordered)
                 .accessibilityLabel("Find meeting slots")
                 .accessibilityHint("Calculates optimal meeting times across all selected timezones")
             }

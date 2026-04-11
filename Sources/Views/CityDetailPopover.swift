@@ -78,7 +78,7 @@ struct CityDetailPopover: View {
                 saveSettings()
                 isPresented = false
             }
-            .buttonStyle(.capsule)
+            .buttonStyle(.bordered)
         }
         .padding(16)
         .frame(width: 280)
